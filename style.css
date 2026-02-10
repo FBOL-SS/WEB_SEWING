@@ -15,8 +15,6 @@ body{
 }
 
 /* Keep some of the original baseline styles, but aligned to the brand */
-h1{font-size:32px; margin-top:0; letter-spacing:-0.02em;}
-p{color: var(--text-muted); font-size:15px; margin-bottom:10px; margin-top:5px;}
 
 .brand-navy-bg{background: var(--brand-navy) !important;}
 
@@ -35,3 +33,52 @@ p{color: var(--text-muted); font-size:15px; margin-bottom:10px; margin-top:5px;}
   border-radius: var(--radius);
 }
 .card p:last-child{margin-bottom:0;}
+
+
+/* === HERO TYPOGRAPHY NORMALIZATION (Maquinaria master) === */
+.page-hero h1{
+  font-size: clamp(2.6rem, 4.2vw, 3.6rem);
+  line-height: 1.05;
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  margin: 0;
+}
+.page-hero p{
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: rgba(255,255,255,0.85);
+  margin-top: 1rem;
+}
+.page-hero .hero-badge{
+  display: inline-flex;
+  align-items: center;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: rgba(147,197,253,0.95);
+  background: rgba(37,99,235,0.18);
+  border: 1px solid rgba(59,130,246,0.35);
+}
+
+/* Breadcrumb inside hero */
+.page-hero .hero-breadcrumb{
+  color: rgba(255,255,255,0.65);
+  font-size: 0.95rem;
+}
+.page-hero .hero-breadcrumb a{
+  color: rgba(255,255,255,0.65);
+  text-decoration: none;
+}
+.page-hero .hero-breadcrumb a:hover{
+  color: rgba(255,255,255,0.9);
+}
+
+/* Home hero: keep image/overlay but normalize typography */
+.page-hero--home h1{
+  font-size: clamp(2.8rem, 4.6vw, 3.8rem);
+}
+.page-hero--home p{
+  font-size: 1.125rem;
+}
