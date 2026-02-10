@@ -1,235 +1,28 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es-MX">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sewing Solution | Maquinaria Industrial de Costura y Automatización</title>
-    <meta name="description" content="Proveedor líder de maquinaria industrial de costura, refacciones y soluciones de automatización para la industria textil en México, Centroamérica y USA.">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://unpkg.com/lucide@latest"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <style>
-        .hero-bg {
-            background: linear-gradient(135deg, rgba(15, 23, 42, 0.98) 0%, rgba(51, 65, 85, 0.95) 100%),
-                        url('http://static.photos/industry/1200x630/140') center/cover no-repeat;
-        }
-        .scroll-reveal {
-            opacity: 0;
-            transform: translateY(30px);
-            transition: all 0.8s cubic-bezier(0.5, 0, 0, 1);
-        }
-        .scroll-reveal.active {
-            opacity: 1;
-            transform: translateY(0);
-        }
-        .machine-card:hover {
-            transform: translateY(-8px);
-            box-shadow: 0 20px 40px -10px rgba(15, 23, 42, 0.2);
-        }
-    </style>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sewing Solution | Maquinaria industrial, refacciones y automatización</title>
+  <meta name="description" content="Sewing Solution impulsa fábricas de confección con maquinaria industrial, refacciones y automatización. Cotiza por WhatsApp y agenda visita técnica.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gray-50 text-slate-800 overflow-x-hidden">
+<body>
+<header class="site-header"><div class="container"><div class="header-row"><a class="logo" href="index.html">Sewing <span>Solution</span></a><nav class="nav-links"><a class="active" href="index.html">Inicio</a><a href="maquinaria.html">Maquinaria</a><a href="refacciones.html">Refacciones</a><a href="automatizacion.html">Automatización</a><a href="servicio-tecnico.html">Servicio técnico</a><a href="contacto.html">Contacto</a></nav><button class="menu-btn" id="mobile-menu-btn" aria-label="Menú">☰</button></div><nav class="mobile-nav" id="mobile-nav"><a href="index.html">Inicio</a><a href="maquinaria.html">Maquinaria</a><a href="refacciones.html">Refacciones</a><a href="automatizacion.html">Automatización</a><a href="servicio-tecnico.html">Servicio técnico</a><a href="contacto.html">Contacto</a></nav></div></header>
+<main>
+<section class="hero"><div class="container"><span class="badge">Proveedor industrial para México, Centroamérica y USA</span><h1>Maquinaria industrial y refacciones para fabricar más, con menos paros y mayor control.</h1><p>Integramos maquinaria, automatización y soporte técnico para que tu planta incremente productividad y reduzca costos operativos desde la primera semana.</p><div style="display:flex;gap:.7rem;flex-wrap:wrap;margin-top:1.2rem;"><a class="btn btn-whatsapp" href="https://wa.me/525500000000?text=Hola,%20quiero%20cotizar%20maquinaria" target="_blank">Cotizar por WhatsApp</a><a class="btn btn-secondary" href="maquinaria.html">Ver maquinaria</a><a class="btn btn-primary" href="contacto.html">Agendar visita técnica</a></div></div></section>
 
-    <!-- Sticky Header -->
-    <header id="navbar" class="fixed w-full top-0 z-50 transition-all duration-300 bg-slate-900">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between items-center h-20">
-                <a href="index.html" class="flex items-center">
-                    <img src="images/logo.png" alt="Sewing Solution" class="h-10 w-auto">
-                </a>
-                
-                <nav class="hidden md:flex space-x-8">
-                    <a href="index.html" class="text-white hover:text-blue-400 font-medium transition">Inicio</a>
-                    <a href="maquinaria.html" class="text-gray-300 hover:text-blue-400 font-medium transition">Maquinaria</a>
-                    <a href="refacciones.html" class="text-gray-300 hover:text-blue-400 font-medium transition">Refacciones</a>
-                    <a href="automatizacion.html" class="text-gray-300 hover:text-blue-400 font-medium transition">Automatización</a>
-                    <a href="servicio-tecnico.html" class="text-gray-300 hover:text-blue-400 font-medium transition">Servicio Técnico</a>
-                    <a href="contacto.html" class="text-gray-300 hover:text-blue-400 font-medium transition">Contacto</a>
-                </nav>
+<section class="section"><div class="container"><p class="kicker">Marcas representadas</p><h2>Showcasing de marcas de primero</h2><div class="grid cards-3"><article class="card"><img class="media-thumb" src="images/brands/brother.png" alt="Marca Brother"><p class="media-note">Imagen reemplazable: /images/brands/brother.png</p><h3>Brother Industrial</h3></article><article class="card"><img class="media-thumb" src="images/brands/pegasus.png" alt="Marca Pegasus"><p class="media-note">Imagen reemplazable: /images/brands/pegasus.png</p><h3>Pegasus</h3></article><article class="card"><img class="media-thumb" src="images/brands/yamato.png" alt="Marca Yamato"><p class="media-note">Imagen reemplazable: /images/brands/yamato.png</p><h3>Yamato</h3></article></div></div></section>
 
-                <div class="hidden md:flex items-center space-x-4">
-                    <a href="https://wa.me/50376048817" target="_blank" class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full font-semibold transition flex items-center gap-2">
-                        <i data-lucide="message-circle" class="w-5 h-5"></i>
-                        WhatsApp
-                    </a>
-                </div>
+<section class="section alt"><div class="container"><p class="kicker">Servicios</p><h2 class="reveal">Soluciones completas para líneas de confección</h2><div class="grid cards-4"><article class="card reveal"><img class="media-thumb" src="https://images.unsplash.com/photo-1567361808960-dec9cb578182?auto=format&fit=crop&w=900&q=80" alt="Maquinaria"><p class="media-note">Imagen reemplazable</p><h3>Maquinaria industrial</h3><p>Recta, overlock, coverstitch, bartack y automáticas programables.</p></article><article class="card reveal"><img class="media-thumb" src="https://images.unsplash.com/photo-1581093458791-9f3c3900df4b?auto=format&fit=crop&w=900&q=80" alt="Refacciones"><p class="media-note">Imagen reemplazable</p><h3>Refacciones</h3><p>Stock técnico para evitar líneas caídas y retrasos de producción.</p></article><article class="card reveal"><img class="media-thumb" src="https://images.unsplash.com/photo-1581091226033-d5c48150dbaa?auto=format&fit=crop&w=900&q=80" alt="Automatización"><p class="media-note">Imagen reemplazable</p><h3>Automatización</h3><p>Proyectos para elevar piezas/hora y bajar variación operativa.</p></article><article class="card reveal"><img class="media-thumb" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=80" alt="Servicio técnico"><p class="media-note">Imagen reemplazable</p><h3>Servicio técnico</h3><p>Instalación, mantenimiento y capacitación para operadores y jefaturas.</p></article></div></div></section>
 
-                <button id="mobile-menu-btn" class="md:hidden text-white">
-                    <i data-lucide="menu" class="w-8 h-8"></i>
-                </button>
-            </div>
-        </div>
+<section class="section"><div class="container"><p class="kicker">Ventajas y beneficios</p><div class="grid cards-3"><article class="card"><img class="media-thumb" src="https://images.unsplash.com/photo-1581092919535-7146ff1a5901?auto=format&fit=crop&w=900&q=80" alt="productividad"><h3>Más productividad</h3><p>Incrementa capacidad con equipos de mayor velocidad y precisión.</p></article><article class="card"><img class="media-thumb" src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=900&q=80" alt="costos"><h3>Menos costos ocultos</h3><p>Reduce mermas, retrabajo y paros por fallas recurrentes.</p></article><article class="card"><img class="media-thumb" src="https://images.unsplash.com/photo-1560264418-c4445382edbc?auto=format&fit=crop&w=900&q=80" alt="control"><h3>Control técnico</h3><p>Estandariza procesos con soporte experto por tipo de prenda.</p></article></div></div></section>
 
-        <div id="mobile-menu" class="hidden md:hidden bg-slate-900 border-t border-slate-800">
-            <div class="px-4 pt-2 pb-6 space-y-2">
-                <a href="index.html" class="block text-white py-3 font-medium border-b border-slate-800">Inicio</a>
-                <a href="maquinaria.html" class="block text-gray-300 py-3 font-medium border-b border-slate-800">Maquinaria</a>
-                <a href="refacciones.html" class="block text-gray-300 py-3 font-medium border-b border-slate-800">Refacciones</a>
-                <a href="automatizacion.html" class="block text-gray-300 py-3 font-medium border-b border-slate-800">Automatización</a>
-                <a href="servicio-tecnico.html" class="block text-gray-300 py-3 font-medium border-b border-slate-800">Servicio Técnico</a>
-                <a href="contacto.html" class="block text-gray-300 py-3 font-medium">Contacto</a>
-                <a href="https://wa.me/50376048817" target="_blank" class="block bg-green-500 text-white text-center py-3 rounded-lg font-semibold mt-4">
-                    Contactar por WhatsApp
-                </a>
-            </div>
-        </div>
-    </header>
+<section class="section alt"><div class="container"><p class="kicker">Categorías de maquinaria</p><h2 class="reveal">Grid de productos por proceso</h2><div class="grid cards-3"><article class="card"><img class="media-thumb" src="https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&w=900&q=80" alt="rectas"><h3>Máquinas rectas</h3><a href="https://wa.me/525500000000?text=Cotizaci%C3%B3n%20m%C3%A1quina%20recta" class="btn btn-primary" target="_blank">Solicitar cotización</a></article><article class="card"><img class="media-thumb" src="https://images.unsplash.com/photo-1610555356070-d0efb6505f81?auto=format&fit=crop&w=900&q=80" alt="overlock"><h3>Overlock</h3><a href="https://wa.me/525500000000?text=Cotizaci%C3%B3n%20overlock" class="btn btn-primary" target="_blank">Solicitar cotización</a></article><article class="card"><img class="media-thumb" src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=900&q=80" alt="coverstitch"><h3>Coverstitch</h3><a href="https://wa.me/525500000000?text=Cotizaci%C3%B3n%20coverstitch" class="btn btn-primary" target="_blank">Solicitar cotización</a></article><article class="card"><img class="media-thumb" src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80" alt="bartack"><h3>Bartack</h3><a href="https://wa.me/525500000000?text=Cotizaci%C3%B3n%20bartack" class="btn btn-primary" target="_blank">Solicitar cotización</a></article><article class="card"><img class="media-thumb" src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80" alt="automaticas"><h3>Automáticas programables</h3><a href="https://wa.me/525500000000?text=Cotizaci%C3%B3n%20autom%C3%A1ticas" class="btn btn-primary" target="_blank">Solicitar cotización</a></article><article class="card"><img class="media-thumb" src="https://images.unsplash.com/photo-1563986768609-322da13575f3?auto=format&fit=crop&w=900&q=80" alt="especiales"><h3>Máquinas especiales</h3><a href="https://wa.me/525500000000?text=Cotizaci%C3%B3n%20m%C3%A1quinas%20especiales" class="btn btn-primary" target="_blank">Solicitar cotización</a></article></div></div></section>
 
-    <!-- Hero Section -->
-    <section class="hero-bg min-h-screen flex items-center pt-20 relative">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <div class="max-w-4xl scroll-reveal active">
-                <div class="inline-block bg-slate-700/50 border border-slate-500/30 rounded-full px-4 py-2 mb-6">
-                    <span class="text-slate-300 font-semibold text-sm tracking-wider uppercase">Proveedor Industrial Líder en El Salvador y Centroamérica</span>
-                </div>
-                <h1 class="text-4xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
-                    Maquinaria Industrial de Costura y <span class="text-slate-300">Soluciones de Automatización</span>
-                </h1>
-                <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl leading-relaxed">
-                    Equipamiento industrial de última generación, refacciones originales y automatización para aumentar tu producción y eficiencia operativa.
-                </p>
-                <div class="flex flex-col sm:flex-row gap-4">
-                    <a href="https://wa.me/50376048817" target="_blank" class="bg-green-600 hover:bg-green-700 text-white text-center px-8 py-4 rounded-lg font-bold text-lg transition transform hover:scale-105 flex items-center justify-center gap-3 shadow-lg shadow-green-900/30">
-                        <i data-lucide="message-circle" class="w-6 h-6"></i>
-                        Cotizar por WhatsApp
-                    </a>
-                    <a href="maquinaria.html" class="bg-white hover:bg-gray-100 text-slate-900 text-center px-8 py-4 rounded-lg font-bold text-lg transition transform hover:scale-105 flex items-center justify-center gap-3">
-                        <i data-lucide="arrow-right" class="w-6 h-6"></i>
-                        Ver Maquinaria
-                    </a>
-                </div>
-                
-                <div class="mt-12 flex flex-wrap items-center gap-8 text-gray-400">
-                    <div class="flex items-center gap-2">
-                        <i data-lucide="check-circle" class="w-5 h-5 text-slate-400"></i>
-                        <span class="text-sm">Entrega Inmediata</span>
-                    </div>
-                    <!-- ... remaining hero content ... -->
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Rest of index.html content (features, machines, testimonials, CTA, etc.) -->
-    <!-- Paste here all the sections that were in your original index.html after the hero and before the footer -->
-
-    <!-- Footer -->
-    <footer class="bg-slate-950 text-gray-400 py-16">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
-                <div>
-                    <a href="index.html" class="block mb-6">
-                        <img src="images/logo.png" alt="Sewing Solution" class="h-10 w-auto max-w-[200px] object-contain">
-                    </a>
-                    <p class="mb-6">Proveedor líder de maquinaria industrial de costura, refacciones y soluciones de automatización para la industria textil.</p>
-                    <div class="flex gap-4">
-                        <a href="#" class="w-10 h-10 bg-slate-900 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
-                            <i data-lucide="facebook" class="w-5 h-5"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-slate-900 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
-                            <i data-lucide="instagram" class="w-5 h-5"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 bg-slate-900 rounded-full flex items-center justify-center hover:bg-blue-600 hover:text-white transition">
-                            <i data-lucide="linkedin" class="w-5 h-5"></i>
-                        </a>
-                    </div>
-                </div>
-
-                <div>
-                    <h4 class="text-white font-bold text-lg mb-6">Enlaces Rápidos</h4>
-                    <ul class="space-y-3">
-                        <li><a href="maquinaria.html" class="hover:text-blue-400 transition">Maquinaria Industrial</a></li>
-                        <li><a href="refacciones.html" class="hover:text-blue-400 transition">Refacciones</a></li>
-                        <li><a href="automatizacion.html" class="hover:text-blue-400 transition">Automatización</a></li>
-                        <li><a href="servicio-tecnico.html" class="hover:text-blue-400 transition">Servicio Técnico</a></li>
-                        <li><a href="contacto.html" class="hover:text-blue-400 transition">Contacto</a></li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="text-white font-bold text-lg mb-6">Contacto</h4>
-                    <ul class="space-y-3">
-                        <li class="flex items-center gap-3">
-                            <i data-lucide="phone" class="w-5 h-5 text-blue-500"></i>
-                            <span>+503 7604 8817</span>
-                        </li>
-                        <li class="flex items-center gap-3">
-                            <i data-lucide="mail" class="w-5 h-5 text-blue-500"></i>
-                            <span>info@sewingsolution.net</span>
-                        </li>
-                        <li class="flex items-start gap-3">
-                            <i data-lucide="map-pin" class="w-5 h-5 text-blue-500 mt-1"></i>
-                            <span>Km 36.5 Carr. a Santa Ana, Zona Franca American Park. Ciudad Arce, La Libertad</span>
-                        </li>
-                    </ul>
-                </div>
-
-                <div>
-                    <h4 class="text-white font-bold text-lg mb-6">Cobertura</h4>
-                    <ul class="space-y-3">
-                        <li class="flex items-center gap-2">
-                            <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
-                            México
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
-                            Centroamérica
-                        </li>
-                        <li class="flex items-center gap-2">
-                            <i data-lucide="check" class="w-4 h-4 text-green-500"></i>
-                            Estados Unidos
-                        </li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="border-t border-slate-900 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-                <p id="copyright">&copy; Sewing Solution. Todos los derechos reservados.</p>
-                <div class="flex gap-6 text-sm">
-                    <a href="#" class="hover:text-white transition">Política de Privacidad</a>
-                    <a href="#" class="hover:text-white transition">Términos de Servicio</a>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Floating WhatsApp Button -->
-    <a href="https://wa.me/50376048817" target="_blank" class="whatsapp-float fixed bottom-6 right-6 bg-green-600 hover:bg-green-700 text-white p-4 rounded-full shadow-2xl z-50 transition transform hover:scale-110 flex items-center gap-2 group">
-        <i data-lucide="message-circle" class="w-8 h-8"></i>
-        <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 whitespace-nowrap font-semibold">Cotizar ahora</span>
-    </a>
-
-    <script>
-        lucide.createIcons();
-
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuBtn.addEventListener('click', () => {
-            mobileMenu.classList.toggle('hidden');
-        });
-
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) {
-                navbar.classList.add('nav-scrolled');
-            } else {
-                navbar.classList.remove('nav-scrolled');
-            }
-        });
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.scroll-reveal').forEach(el => observer.observe(el));
-
-        // Dynamic copyright year
-        document.getElementById('copyright').innerHTML = '&copy; ' + new Date().getFullYear() + ' Sewing Solution. Todos los derechos reservados.';
-    </script>
-</body>
-</html>
+<section class="section"><div class="container"><article class="card dark"><h2>¿Necesitas maquinaria o refacciones?</h2><p>Te enviamos recomendación técnica y propuesta comercial por WhatsApp en minutos.</p><a class="btn btn-whatsapp" href="https://wa.me/525500000000?text=Hola,%20necesito%20maquinaria%20o%20refacciones" target="_blank">Contactar por WhatsApp</a></article></div></section>
+</main>
+<footer class="site-footer"><div class="container footer-grid"><div><h3>Sewing Solution</h3><p>Socio estratégico para crecimiento industrial en confección.</p></div><div><h4>Contacto</h4><ul><li>WhatsApp: +52 55 0000 0000</li><li>Email: ventas@sewingsolution.com</li></ul></div><div><h4>Cobertura</h4><ul><li>México</li><li>Centroamérica</li><li>USA</li></ul></div><div><h4>Redes</h4><ul><li>LinkedIn</li><li>Facebook</li><li>YouTube</li></ul></div></div><div class="container footer-bottom">© <span id="year"></span> Sewing Solution. Todos los derechos reservados.</div></footer>
+<a class="whatsapp-float" target="_blank" href="https://wa.me/525500000000?text=Hola,%20quiero%20cotizar">WhatsApp</a>
+<script src="scripts.js" defer></script>
+</body></html>
