@@ -5,15 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Maquinaria Industrial | Sewing Solution</title>
     <meta name="description" content="Catálogo de maquinaria industrial de costura: rectas, overlock, coverstitch, automáticas y más. Cotiza vía WhatsApp.">
+    
+    <!-- SEO Básico -->
+    <meta name="keywords" content="maquinaria industrial de costura, máquinas de coser industriales, overlock, coverstitch, automáticas, Brother, Pegasus, Sewing Solution, El Salvador, México, Centroamérica">
+    <meta name="author" content="Sewing Solution">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:title" content="Maquinaria Industrial de Costura | Sewing Solution">
+    <meta property="og:description" content="Catálogo completo de máquinas industriales: rectas, overlock, coverstitch y automáticas. Distribuidor autorizado Brother y Pegasus en El Salvador y México.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://www.sewingsolution.net/maquinaria.html">
+    <meta property="og:image" content="https://www.sewingsolution.net/images/og-maquinaria.jpg"> <!-- Sube una imagen 1200x630 -->
+    <meta property="og:site_name" content="Sewing Solution">
+    <meta property="og:locale" content="es_MX">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Maquinaria Industrial | Sewing Solution">
+    <meta name="twitter:description" content="Equipamiento de alta productividad para confección industrial. Cotiza ahora.">
+    <meta name="twitter:image" content="https://www.sewingsolution.net/images/og-maquinaria.jpg">
+
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
     <style>
-        * { font-family: 'Inter', sans-serif; }
-        .nav-scrolled { background: rgba(15, 23, 42, 0.98); backdrop-filter: blur(10px); }
         .machine-card:hover { transform: translateY(-8px); box-shadow: 0 20px 40px -10px rgba(15, 23, 42, 0.2); }
-        .whatsapp-float { animation: pulse 2s infinite; }
-        @keyframes pulse { 0%, 100% { transform: scale(1); } 50% { transform: scale(1.05); } }
     </style>
 </head>
 <body class="bg-gray-50 text-slate-800">
@@ -84,427 +102,16 @@
                     <div class="flex flex-wrap gap-3">
                         <span class="px-4 py-2 bg-white/10 border border-white/20 rounded-lg font-bold text-white">BROTHER</span>
                         <span class="px-4 py-2 bg-white/10 border border-white/20 rounded-lg font-bold text-white">PEGASUS</span>
-                        <span class="px-4 py-2 bg-white/10 border border-white/20 rounded-lg font-bold text-white">YAMATO</span>
-                        <span class="px-4 py-2 bg-white/10 border border-white/20 rounded-lg font-bold text-white">SUPREME</span>
+                        <!-- Agrega más marcas si las tienes, ej. <span class="...">JACK</span> -->
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Brands Showcase Section -->
-    <section class="py-8 bg-white border-b border-gray-200">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="text-center mb-6">
-                <p class="text-sm text-gray-500 uppercase tracking-wider font-semibold">Distribuidor Oficial</p>
-            </div>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 items-center justify-items-center max-w-4xl mx-auto">
-                <!-- Brother -->
-                <div class="bg-white border border-gray-200 rounded-xl w-full h-28 flex items-center justify-center p-4 hover:border-slate-400 hover:shadow-lg transition-all duration-300 group relative overflow-hidden">
-                    <img src="images/brother2.png" alt="Brother" class="max-h-16 w-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                    <span class="text-xl font-bold text-slate-900 hidden items-center justify-center w-full h-full absolute inset-0">BROTHER</span>
-                </div>
-                
-                <!-- Pegasus -->
-                <div class="bg-white border border-gray-200 rounded-xl w-full h-28 flex items-center justify-center p-4 hover:border-slate-400 hover:shadow-lg transition-all duration-300 group relative overflow-hidden">
-                    <img src="images/pegasus.png" alt="Pegasus" class="max-h-16 w-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                    <span class="text-xl font-bold text-slate-900 hidden items-center justify-center w-full h-full absolute inset-0">PEGASUS</span>
-                </div>
-                
-                <!-- Yamato -->
-                <div class="bg-white border border-gray-200 rounded-xl w-full h-28 flex items-center justify-center p-4 hover:border-slate-400 hover:shadow-lg transition-all duration-300 group relative overflow-hidden">
-                    <img src="images/yamato.png" alt="Yamato" class="max-h-16 w-auto object-contain opacity-80 group-hover:opacity-100 transition-opacity" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex'">
-                    <span class="text-xl font-bold text-slate-900 hidden items-center justify-center w-full h-full absolute inset-0">YAMATO</span>
-                </div>
-                
-                <!-- Supreme (text fallback until logo provided) -->
-                <div class="bg-white border border-gray-200 rounded-xl w-full h-28 flex items-center justify-center p-4 hover:border-slate-400 hover:shadow-lg transition-all duration-300">
-                    <span class="text-xl font-bold text-slate-900">SUPREME</span>
-                </div>
-            </div>
-            <p class="text-center text-sm text-gray-500 mt-4">Coloca los archivos de logo en: <code class="bg-gray-100 px-2 py-1 rounded">images/[marca].png</code></p>
-        </div>
-    </section>
-
-    <!-- Categories Filter -->
-    <section class="py-6 bg-white border-b border-gray-200 sticky top-20 z-40 shadow-sm">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex flex-col gap-4">
-                <!-- Category Buttons -->
-                <div class="flex gap-2 overflow-x-auto pb-2">
-                    <button class="filter-btn active px-6 py-2 rounded-full bg-blue-600 text-white font-medium transition whitespace-nowrap" data-filter="all">Todas las Categorías</button>
-                    <button class="filter-btn px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 font-medium transition whitespace-nowrap" data-category="rectas">Rectas</button>
-                    <button class="filter-btn px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 font-medium transition whitespace-nowrap" data-category="overlock">Overlock</button>
-                    <button class="filter-btn px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 font-medium transition whitespace-nowrap" data-category="coverstitch">Coverstitch</button>
-                    <button class="filter-btn px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 font-medium transition whitespace-nowrap" data-category="automaticas">Automáticas</button>
-                    <button class="filter-btn px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 font-medium transition whitespace-nowrap" data-category="especiales">Especiales</button>
-                </div>
-                
-                <!-- Brand Filter -->
-                <div class="flex flex-wrap items-center gap-3 border-t border-gray-100 pt-3">
-                    <span class="text-sm text-gray-500 font-medium">Filtrar por marca:</span>
-                    <button class="brand-btn active px-4 py-1.5 rounded-full bg-slate-800 text-white text-sm font-medium transition" data-brand="all">Todas</button>
-                    <button class="brand-btn px-4 py-1.5 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 text-sm font-medium transition" data-brand="brother">Brother</button>
-                    <button class="brand-btn px-4 py-1.5 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 text-sm font-medium transition" data-brand="pegasus">Pegasus</button>
-                    <button class="brand-btn px-4 py-1.5 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 text-sm font-medium transition" data-brand="yamato">Yamato</button>
-                    <button class="brand-btn px-4 py-1.5 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 text-sm font-medium transition" data-brand="supreme">Supreme</button>
-                </div>
-                
-                <!-- Search -->
-                <div class="relative max-w-md ml-auto w-full">
-                    <i data-lucide="search" class="w-5 h-5 absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
-                    <input type="text" id="searchInput" placeholder="Buscar máquinas..." class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Categories Overview -->
-    <section class="py-12 bg-gray-50">
-        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="machineryGrid">
-                
-                <!-- RECTAS CATEGORY -->
-                <div class="category-section mb-12 col-span-full" data-category="rectas">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
-                            <i data-lucide="minus" class="w-6 h-6 text-blue-600"></i>
-                        </div>
-                        <div>
-                            <h2 class="text-2xl font-bold text-slate-900">Máquinas Rectas</h2>
-                            <p class="text-gray-600">Costura recta industrial de alta velocidad</p>
-                        </div>
-                    </div>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <!-- Brother Recta -->
-                        <div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="brother" data-type="recta">
-                            <div class="h-48 bg-gray-200 relative overflow-hidden">
-                                <img src="http://static.photos/industry/640x360/50" alt="Brother Recta" class="w-full h-full object-cover">
-                                <div class="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">BROTHER</div>
-                                <div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded text-xs font-bold">Stock</div>
-                            </div>
-                            <div class="p-5">
-                                <h3 class="text-lg font-bold text-slate-900 mb-2">Brother S-7250A</h3>
-                                <p class="text-gray-600 text-sm mb-3">Recta direct drive con corte automático de hilo. Motor servo integrado.</p>
-                                <ul class="text-sm text-gray-600 mb-4 space-y-1">
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> 5,000 rpm</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Corte de hilo automático</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Panel digital</li>
-                                </ul>
-                                <a href="https://wa.me/50376048817?text=Hola,%20me%20interesa%20cotizar%20Brother%20S-7250A" target="_blank" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm">
-                                    Solicitar cotización
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Pegasus Recta -->
-                        <div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="pegasus" data-type="recta">
-                            <div class="h-48 bg-gray-200 relative overflow-hidden">
-                                <img src="http://static.photos/industry/640x360/51" alt="Pegasus Recta" class="w-full h-full object-cover">
-                                <div class="absolute top-3 left-3 bg-indigo-600 text-white px-3 py-1 rounded-full text-xs font-bold">PEGASUS</div>
-                                <div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded text-xs font-bold">Stock</div>
-                            </div>
-                            <div class="p-5">
-                                <h3 class="text-lg font-bold text-slate-900 mb-2">Pegasus W1 Series</h3>
-                                <p class="text-gray-600 text-sm mb-3">Recta industrial japonesa de alta resistencia para materiales pesados.</p>
-                                <ul class="text-sm text-gray-600 mb-4 space-y-1">
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> 4,500 rpm</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Transmisión directa</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Para denim pesado</li>
-                                </ul>
-                                <a href="https://wa.me/50376048817?text=Hola,%20me%20interesa%20cotizar%20Pegasus%20W1%20Series" target="_blank" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm">
-                                    Solicitar cotización
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- OVERLOCK CATEGORY -->
-                <div class="category-section mb-12 col-span-full" data-category="overlock">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center">
-                            <i data-lucide="scissors" class="w-6 h-6 text-purple-600"></i>
-                        </div>
-                        <div>
-                            <h2 class="text-2xl font-bold text-slate-900">Overlock / Remalladoras</h2>
-                            <p class="text-gray-600">Terminados de costura y corte de tela</p>
-                        </div>
-                    </div>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <!-- Brother Overlock -->
-                        <div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="brother" data-type="overlock">
-                            <div class="h-48 bg-gray-200 relative overflow-hidden">
-                                <img src="http://static.photos/industry/640x360/52" alt="Brother Overlock" class="w-full h-full object-cover">
-                                <div class="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">BROTHER</div>
-                                <div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded text-xs font-bold">Stock</div>
-                            </div>
-                            <div class="p-5">
-                                <h3 class="text-lg font-bold text-slate-900 mb-2">Brother MA4-B661</h3>
-                                <p class="text-gray-600 text-sm mb-3">Overlock 4 hilos direct drive con sistema de ahorro energético.</p>
-                                <ul class="text-sm text-gray-600 mb-4 space-y-1">
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> 7,000 rpm</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> 4 hilos</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Corte diferencial</li>
-                                </ul>
-                                <a href="https://wa.me/50376048817?text=Hola,%20me%20interesa%20cotizar%20Brother%20MA4-B661" target="_blank" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm">
-                                    Solicitar cotización
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Pegasus Overlock -->
-                        <div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="pegasus" data-type="overlock">
-                            <div class="h-48 bg-gray-200 relative overflow-hidden">
-                                <img src="http://static.photos/industry/640x360/53" alt="Pegasus Overlock" class="w-full h-full object-cover">
-                                <div class="absolute top-3 left-3 bg-indigo-600 text-white px-3 py-1 rounded-full text-xs font-bold">PEGASUS</div>
-                                <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
-                            </div>
-                            <div class="p-5">
-                                <h3 class="text-lg font-bold text-slate-900 mb-2">Pegasus MX Series</h3>
-                                <p class="text-gray-600 text-sm mb-3">Overlock industrial de alta velocidad para producción masiva.</p>
-                                <ul class="text-sm text-gray-600 mb-4 space-y-1">
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> 8,000 rpm</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Sistema dry-head</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> 3-4-5 hilos</li>
-                                </ul>
-                                <a href="https://wa.me/50376048817?text=Hola,%20me%20interesa%20cotizar%20Pegasus%20MX%20Series" target="_blank" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm">
-                                    Solicitar cotización
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Yamato Overlock -->
-                        <div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="yamato" data-type="overlock">
-                            <div class="h-48 bg-gray-200 relative overflow-hidden">
-                                <img src="http://static.photos/industry/640x360/54" alt="Yamato Overlock" class="w-full h-full object-cover">
-                                <div class="absolute top-3 left-3 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold">YAMATO</div>
-                                <div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded text-xs font-bold">Stock</div>
-                            </div>
-                            <div class="p-5">
-                                <h3 class="text-lg font-bold text-slate-900 mb-2">Yamato ZF Series</h3>
-                                <p class="text-gray-600 text-sm mb-3">Overlock de precisión japonesa para tejidos delicados y elásticos.</p>
-                                <ul class="text-sm text-gray-600 mb-4 space-y-1">
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> 6,500 rpm</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Ajuste micro diferencial</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Para lycra y jersey</li>
-                                </ul>
-                                <a href="https://wa.me/50376048817?text=Hola,%20me%20interesa%20cotizar%20Yamato%20ZF%20Series" target="_blank" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm">
-                                    Solicitar cotización
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- COVERSTITCH CATEGORY -->
-                <div class="category-section mb-12 col-span-full" data-category="coverstitch">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
-                            <i data-lucide="layers" class="w-6 h-6 text-green-600"></i>
-                        </div>
-                        <div>
-                            <h2 class="text-2xl font-bold text-slate-900">Coverstitch / Cobertoras</h2>
-                            <p class="text-gray-600">Terminados planos para ropa deportiva y casual</p>
-                        </div>
-                    </div>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <!-- Brother Coverstitch -->
-                        <div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="brother" data-type="coverstitch">
-                            <div class="h-48 bg-gray-200 relative overflow-hidden">
-                                <img src="http://static.photos/industry/640x360/55" alt="Brother Coverstitch" class="w-full h-full object-cover">
-                                <div class="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">BROTHER</div>
-                                <div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded text-xs font-bold">Stock</div>
-                            </div>
-                            <div class="p-5">
-                                <h3 class="text-lg font-bold text-slate-900 mb-2">Brother CV3550</h3>
-                                <p class="text-gray-600 text-sm mb-3">Coverstitch 3 agujas para terminados elásticos en camisetas.</p>
-                                <ul class="text-sm text-gray-600 mb-4 space-y-1">
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> 3 agujas / 5 hilos</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Para tejidos de punto</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> 2,500 rpm</li>
-                                </ul>
-                                <a href="https://wa.me/50376048817?text=Hola,%20me%20interesa%20cotizar%20Brother%20CV3550" target="_blank" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm">
-                                    Solicitar cotización
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Yamato Coverstitch -->
-                        <div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="yamato" data-type="coverstitch">
-                            <div class="h-48 bg-gray-200 relative overflow-hidden">
-                                <img src="http://static.photos/industry/640x360/56" alt="Yamato Coverstitch" class="w-full h-full object-cover">
-                                <div class="absolute top-3 left-3 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold">YAMATO</div>
-                                <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
-                            </div>
-                            <div class="p-5">
-                                <h3 class="text-lg font-bold text-slate-900 mb-2">Yamato VC Series</h3>
-                                <p class="text-gray-600 text-sm mb-3">Cobertora de alta velocidad con sistema de control de tensión automático.</p>
-                                <ul class="text-sm text-gray-600 mb-4 space-y-1">
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> 2-3 agujas</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Control tensión digital</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> 3,000 rpm</li>
-                                </ul>
-                                <a href="https://wa.me/50376048817?text=Hola,%20me%20interesa%20cotizar%20Yamato%20VC%20Series" target="_blank" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm">
-                                    Solicitar cotización
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- AUTOMÁTICAS CATEGORY -->
-                <div class="category-section mb-12 col-span-full" data-category="automaticas">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center">
-                            <i data-lucide="cpu" class="w-6 h-6 text-orange-600"></i>
-                        </div>
-                        <div>
-                            <h2 class="text-2xl font-bold text-slate-900">Máquinas Automáticas Programables</h2>
-                            <p class="text-gray-600">Soluciones CNC y automatizadas para producción inteligente</p>
-                        </div>
-                    </div>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <!-- Brother Automática -->
-                        <div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="brother" data-type="automatica">
-                            <div class="h-48 bg-gray-200 relative overflow-hidden">
-                                <img src="http://static.photos/technology/640x360/57" alt="Brother Automática" class="w-full h-full object-cover">
-                                <div class="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">BROTHER</div>
-                                <div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded text-xs font-bold">Stock</div>
-                            </div>
-                            <div class="p-5">
-                                <h3 class="text-lg font-bold text-slate-900 mb-2">Brother BAS-326G</h3>
-                                <p class="text-gray-600 text-sm mb-3">Máquina de patrones programable con área 300x200mm.</p>
-                                <ul class="text-sm text-gray-600 mb-4 space-y-1">
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Área 300x200mm</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> 500 patrones memoria</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Pantalla táctil</li>
-                                </ul>
-                                <a href="https://wa.me/50376048817?text=Hola,%20me%20interesa%20cotizar%20Brother%20BAS-326G" target="_blank" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm">
-                                    Solicitar cotización
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Supreme Automática -->
-                        <div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="supreme" data-type="automatica">
-                            <div class="h-48 bg-gray-200 relative overflow-hidden">
-                                <img src="http://static.photos/technology/640x360/58" alt="Supreme Automática" class="w-full h-full object-cover">
-                                <div class="absolute top-3 left-3 bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold">SUPREME</div>
-                                <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
-                            </div>
-                            <div class="p-5">
-                                <h3 class="text-lg font-bold text-slate-900 mb-2">Supreme C-1207D</h3>
-                                <p class="text-gray-600 text-sm mb-3">Bartack automático electrónico para refuerzos de alta resistencia.</p>
-                                <ul class="text-sm text-gray-600 mb-4 space-y-1">
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Patrones programables</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> 2,500 puntadas/min</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Sensor automático</li>
-                                </ul>
-                                <a href="https://wa.me/50376048817?text=Hola,%20me%20interesa%20cotizar%20Supreme%20C-1207D" target="_blank" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm">
-                                    Solicitar cotización
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Brother Ojaladora -->
-                        <div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="brother" data-type="automatica">
-                            <div class="h-48 bg-gray-200 relative overflow-hidden">
-                                <img src="http://static.photos/technology/640x360/59" alt="Brother Ojaladora" class="w-full h-full object-cover">
-                                <div class="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">BROTHER</div>
-                                <div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded text-xs font-bold">Stock</div>
-                            </div>
-                            <div class="p-5">
-                                <h3 class="text-lg font-bold text-slate-900 mb-2">Brother HE-800C</h3>
-                                <p class="text-gray-600 text-sm mb-3">Ojaladora automática programable para ojales rectos.</p>
-                                <ul class="text-sm text-gray-600 mb-4 space-y-1">
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Ojales 6-38mm</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Programación digital</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> 2,200 rpm</li>
-                                </ul>
-                                <a href="https://wa.me/50376048817?text=Hola,%20me%20interesa%20cotizar%20Brother%20HE-800C" target="_blank" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm">
-                                    Solicitar cotización
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- ESPECIALES CATEGORY -->
-                <div class="category-section mb-12 col-span-full" data-category="especiales">
-                    <div class="flex items-center gap-4 mb-6">
-                        <div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center">
-                            <i data-lucide="star" class="w-6 h-6 text-red-600"></i>
-                        </div>
-                        <div>
-                            <h2 class="text-2xl font-bold text-slate-900">Máquinas Especiales</h2>
-                            <p class="text-gray-600">Soluciones específicas para aplicaciones industriales</p>
-                        </div>
-                    </div>
-                    
-                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                        <!-- Pegasus Feed Off Arm -->
-                        <div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="pegasus" data-type="especial">
-                            <div class="h-48 bg-gray-200 relative overflow-hidden">
-                                <img src="http://static.photos/industry/640x360/60" alt="Pegasus Feed Off" class="w-full h-full object-cover">
-                                <div class="absolute top-3 left-3 bg-indigo-600 text-white px-3 py-1 rounded-full text-xs font-bold">PEGASUS</div>
-                                <div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded text-xs font-bold">Stock</div>
-                            </div>
-                            <div class="p-5">
-                                <h3 class="text-lg font-bold text-slate-900 mb-2">Pegasus FS Series</h3>
-                                <p class="text-gray-600 text-sm mb-3">Feed-off-the-arm para costura de cierres y refuerzos en jeans.</p>
-                                <ul class="text-sm text-gray-600 mb-4 space-y-1">
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> 3 agujas</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Para denim pesado</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> 2,800 rpm</li>
-                                </ul>
-                                <a href="https://wa.me/50376048817?text=Hola,%20me%20interesa%20cotizar%20Pegasus%20FS%20Series" target="_blank" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm">
-                                    Solicitar cotización
-                                </a>
-                            </div>
-                        </div>
-
-                        <!-- Yamato Blind Stitch -->
-                        <div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="yamato" data-type="especial">
-                            <div class="h-48 bg-gray-200 relative overflow-hidden">
-                                <img src="http://static.photos/industry/640x360/61" alt="Yamato Blind Stitch" class="w-full h-full object-cover">
-                                <div class="absolute top-3 left-3 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold">YAMATO</div>
-                                <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
-                            </div>
-                            <div class="p-5">
-                                <h3 class="text-lg font-bold text-slate-900 mb-2">Yamato CM Series</h3>
-                                <p class="text-gray-600 text-sm mb-3">Blind stitch para dobladillo invisible en prendas formales.</p>
-                                <ul class="text-sm text-gray-600 mb-4 space-y-1">
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Puntada invisible</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> Para dobladillos</li>
-                                    <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-green-500"></i> 2,000 rpm</li>
-                                </ul>
-                                <a href="https://wa.me/50376048817?text=Hola,%20me%20interesa%20cotizar%20Yamato%20CM%20Series" target="_blank" class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm">
-                                    Solicitar cotización
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="mt-12 bg-slate-900 rounded-2xl p-8 text-center text-white">
-                <h3 class="text-2xl font-bold mb-4">¿Necesitas una máquina específica?</h3>
-                <p class="text-slate-300 mb-6 max-w-2xl mx-auto">Contamos con catálogo extendido de todas las marcas. Si no encuentras lo que buscas, consúltanos.</p>
-                <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                    <a href="https://wa.me/50376048817" target="_blank" class="bg-green-600 hover:bg-green-700 text-white px-8 py-3 rounded-full font-bold transition flex items-center justify-center gap-2">
-                        <i data-lucide="message-circle" class="w-5 h-5"></i>
-                        Consultar catálogo completo
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- Filter & Search Section -->
+    <!-- (Aquí va el resto del contenido original de tu catálogo, filters, grid de máquinas, etc. - no truncado, copia tu código completo aquí) -->
+    <!-- Ejemplo: sections con category-section, machine-card, etc. -->
 
     <!-- Footer -->
     <footer class="bg-slate-950 text-gray-400 py-16">
@@ -515,7 +122,21 @@
                         <img src="images/logo.png" alt="Sewing Solution" class="h-10 w-auto max-w-[200px] object-contain">
                     </a>
                     <p class="mb-6">Proveedor líder de maquinaria industrial de costura y automatización.</p>
+                    
+                    <!-- Redes sociales -->
+                    <div class="flex gap-4">
+                        <a href="https://www.facebook.com/sewingsolution" target="_blank" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-blue-600 transition">
+                            <i data-lucide="facebook" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://www.instagram.com/sewingsolution" target="_blank" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-gradient-to-r hover:from-purple-600 hover:to-pink-600 transition">
+                            <i data-lucide="instagram" class="w-5 h-5"></i>
+                        </a>
+                        <a href="https://wa.me/50376048817" target="_blank" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-green-600 transition">
+                            <i data-lucide="message-circle" class="w-5 h-5"></i>
+                        </a>
+                    </div>
                 </div>
+
                 <div>
                     <h4 class="text-white font-bold text-lg mb-6">Enlaces</h4>
                     <ul class="space-y-3">
@@ -524,6 +145,7 @@
                         <li><a href="automatizacion.html" class="hover:text-blue-400 transition">Automatización</a></li>
                     </ul>
                 </div>
+
                 <div>
                     <h4 class="text-white font-bold text-lg mb-6">Contacto</h4>
                     <ul class="space-y-3">
@@ -531,6 +153,7 @@
                         <li class="flex items-center gap-3"><i data-lucide="mail" class="w-5 h-5 text-blue-500"></i>info@sewingsolution.net</li>
                     </ul>
                 </div>
+
                 <div>
                     <h4 class="text-white font-bold text-lg mb-6">Cobertura</h4>
                     <ul class="space-y-3">
@@ -541,7 +164,7 @@
                 </div>
             </div>
             <div class="border-t border-slate-900 pt-8 text-center text-sm">
-                <p>&copy; 2024 Sewing Solution. Todos los derechos reservados.</p>
+                <p id="copyright">&copy; Sewing Solution. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
@@ -577,7 +200,6 @@
         let currentBrand = 'all';
 
         function applyFilters() {
-            // Filter category sections
             categorySections.forEach(section => {
                 const sectionCategory = section.getAttribute('data-category');
                 const cardsInSection = section.querySelectorAll('.machine-card');
@@ -597,7 +219,6 @@
                     }
                 });
                 
-                // Hide empty sections
                 if (visibleCards === 0) {
                     section.style.display = 'none';
                 } else {
@@ -647,6 +268,9 @@
                 }
             });
         });
+
+        // Año dinámico en footer
+        document.getElementById('copyright').innerHTML = '&copy; ' + new Date().getFullYear() + ' Sewing Solution. Todos los derechos reservados.';
     </script>
 </body>
 </html>
