@@ -1,28 +1,18 @@
-body {
-	padding: 2rem;
-	font-family: -apple-system, BlinkMacSystemFont, "Arial", sans-serif;
+/* style.css - Shared styles for all pages */
+* {
+    font-family: 'Inter', sans-serif;
 }
 
-h1 {
-	font-size: 16px;
-	margin-top: 0;
+.nav-scrolled {
+    background: rgba(15, 23, 42, 0.98);
+    backdrop-filter: blur(10px);
 }
 
-p {
-	color: rgb(107, 114, 128);
-	font-size: 15px;
-	margin-bottom: 10px;
-	margin-top: 5px;
+.whatsapp-float {
+    animation: pulse 2s infinite;
 }
 
-.card {
-	max-width: 620px;
-	margin: 0 auto;
-	padding: 16px;
-	border: 1px solid lightgray;
-	border-radius: 16px;
-}
-
-.card p:last-child {
-	margin-bottom: 0;
+@keyframes pulse {
+    0%, 100% { transform: scale(1); }
+    50% { transform: scale(1.05); }
 }
