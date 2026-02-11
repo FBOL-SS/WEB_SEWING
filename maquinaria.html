@@ -110,361 +110,596 @@
 </section>
 <!-- Categories Filter -->
 <section class="py-6 bg-white border-b border-gray-200 sticky top-20 z-40 shadow-sm">
-<div class="container mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex flex-col gap-4">
-<!-- Category Buttons -->
-<div class="flex gap-2 overflow-x-auto pb-2">
-<button class="filter-btn active px-6 py-2 rounded-full bg-blue-600 text-white font-medium transition whitespace-nowrap" data-filter="all">Todas las Categorías</button>
-<button class="filter-btn px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 font-medium transition whitespace-nowrap" data-category="rectas">Rectas</button>
-<button class="filter-btn px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 font-medium transition whitespace-nowrap" data-category="overlock">Overlock</button>
-<button class="filter-btn px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 font-medium transition whitespace-nowrap" data-category="coverstitch">Coverstitch</button>
-<button class="filter-btn px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 font-medium transition whitespace-nowrap" data-category="automaticas">Automáticas</button>
-<button class="filter-btn px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 font-medium transition whitespace-nowrap" data-category="especiales">Especiales</button>
-</div>
-<!-- Brand Filter -->
-<div class="flex flex-wrap items-center gap-3 border-t border-gray-100 pt-3">
-<span class="text-sm text-gray-500 font-medium">Filtrar por marca:</span>
-<button class="brand-btn active px-4 py-1.5 rounded-full bg-slate-800 text-white text-sm font-medium transition" data-brand="all">Todas</button>
-<button class="brand-btn px-4 py-1.5 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 text-sm font-medium transition" data-brand="brother">Brother</button>
-<button class="brand-btn px-4 py-1.5 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 text-sm font-medium transition" data-brand="pegasus">Pegasus</button>
-<button class="brand-btn px-4 py-1.5 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 text-sm font-medium transition" data-brand="yamato">Yamato</button>
-<button class="brand-btn px-4 py-1.5 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 text-sm font-medium transition" data-brand="supreme">Supreme</button>
-</div>
-<!-- Search -->
-<div class="relative max-w-md ml-auto w-full">
-<i class="w-5 h-5 absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" data-lucide="search"></i>
-<input class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" id="searchInput" placeholder="Buscar máquinas..." type="text"/>
-</div>
-</div>
-</div>
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex flex-col gap-4">
+      <div class="flex gap-2 overflow-x-auto pb-2">
+        <button class="filter-btn active px-6 py-2 rounded-full bg-blue-600 text-white font-medium transition whitespace-nowrap" data-filter="all">Todas</button>
+        <button class="filter-btn px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 font-medium transition whitespace-nowrap" data-category="rectas">Rectas</button>
+        <button class="filter-btn px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 font-medium transition whitespace-nowrap" data-category="doble-aguja">Doble Aguja</button>
+        <button class="filter-btn px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 font-medium transition whitespace-nowrap" data-category="overlock">Overlock</button>
+        <button class="filter-btn px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 font-medium transition whitespace-nowrap" data-category="coverstitch">Coverstitch</button>
+        <button class="filter-btn px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 font-medium transition whitespace-nowrap" data-category="bartack">Bartack</button>
+        <button class="filter-btn px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 font-medium transition whitespace-nowrap" data-category="ojal">Ojal</button>
+        <button class="filter-btn px-6 py-2 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 font-medium transition whitespace-nowrap" data-category="automaticas">Automáticas</button>
+      </div>
+
+      <div class="flex flex-wrap items-center gap-3 border-t border-gray-100 pt-3">
+        <span class="text-sm text-gray-500 font-medium">Filtrar por marca:</span>
+        <button class="brand-btn active px-4 py-1.5 rounded-full bg-slate-800 text-white text-sm font-medium transition" data-brand="all">Todas</button>
+        <button class="brand-btn px-4 py-1.5 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 text-sm font-medium transition" data-brand="brother">Brother</button>
+        <button class="brand-btn px-4 py-1.5 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 text-sm font-medium transition" data-brand="supreme">Supreme</button>
+        <button class="brand-btn px-4 py-1.5 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 text-sm font-medium transition" data-brand="pegasus">Pegasus</button>
+        <button class="brand-btn px-4 py-1.5 rounded-full bg-gray-100 text-gray-700 hover:bg-gray-200 text-sm font-medium transition" data-brand="yamato">Yamato</button>
+      </div>
+
+      <div class="relative max-w-md ml-auto w-full">
+        <i class="w-5 h-5 absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400" data-lucide="search"></i>
+        <input class="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600" id="searchInput" placeholder="Buscar modelos..." type="text"/>
+      </div>
+    </div>
+  </div>
 </section>
 <!-- Categories Overview -->
 <section class="py-12 bg-gray-50">
-<div class="container mx-auto px-4 sm:px-6 lg:px-8">
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="machineryGrid">
-<!-- RECTAS CATEGORY -->
-<div class="category-section mb-12 col-span-full" data-category="rectas">
-<div class="flex items-center gap-4 mb-6">
-<div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
-<i class="w-6 h-6 text-blue-600" data-lucide="minus"></i>
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8" id="machineryGrid">
+      <div class="category-section mb-12 col-span-full" data-category="rectas">
+  <div class="flex items-center gap-4 mb-6">
+    <div class="w-12 h-12 bg-blue-100 rounded-xl flex items-center justify-center">
+      <i class="w-6 h-6 text-blue-600" data-lucide="minus"></i>
+    </div>
+    <div>
+      <h2 class="text-2xl font-bold text-slate-900">Máquinas Rectas</h2>
+      <p class="text-gray-600">Puntada recta industrial para producción</p>
+    </div>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="brother" data-type="recta">
+  <div class="h-48 bg-gray-200 relative overflow-hidden">
+    <img alt="BROTHER S-7180" class="w-full h-full object-cover" src="images/machines/brother-s-7180.jpg"/>
+    <div class="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">BROTHER</div>
+    <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
+  </div>
+  <div class="p-5">
+    <h3 class="text-lg font-bold text-slate-900 mb-2">BROTHER S-7180</h3>
+    <p class="text-gray-600 text-sm mb-3">Recta industrial para producción continua con operación eficiente y costura estable.</p>
+    <ul class="text-sm text-gray-600 mb-4 space-y-1">
+      <li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Puntada recta industrial</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Operación estable</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Ideal para líneas de confección</li>
+    </ul>
+    <a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
+      Solicitar cotización
+    </a>
+  </div>
+</div><div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="brother" data-type="recta">
+  <div class="h-48 bg-gray-200 relative overflow-hidden">
+    <img alt="BROTHER S-6280" class="w-full h-full object-cover" src="images/machines/brother-s-6280.jpg"/>
+    <div class="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">BROTHER</div>
+    <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
+  </div>
+  <div class="p-5">
+    <h3 class="text-lg font-bold text-slate-900 mb-2">BROTHER S-6280</h3>
+    <p class="text-gray-600 text-sm mb-3">Recta industrial compacta para talleres y plantas que buscan consistencia y facilidad de uso.</p>
+    <ul class="text-sm text-gray-600 mb-4 space-y-1">
+      <li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Puntada recta industrial</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Controlable y confiable</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Soporte y repuestos disponibles</li>
+    </ul>
+    <a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
+      Solicitar cotización
+    </a>
+  </div>
+</div><div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="brother" data-type="recta">
+  <div class="h-48 bg-gray-200 relative overflow-hidden">
+    <img alt="BROTHER S-7300" class="w-full h-full object-cover" src="images/machines/brother-s-7300.jpg"/>
+    <div class="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">BROTHER</div>
+    <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
+  </div>
+  <div class="p-5">
+    <h3 class="text-lg font-bold text-slate-900 mb-2">BROTHER S-7300</h3>
+    <p class="text-gray-600 text-sm mb-3">Recta industrial de alta productividad para procesos estándar de costura en prendas.</p>
+    <ul class="text-sm text-gray-600 mb-4 space-y-1">
+      <li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Puntada recta industrial</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Robusta para planta</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Enfoque en productividad</li>
+    </ul>
+    <a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
+      Solicitar cotización
+    </a>
+  </div>
+</div><div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="supreme" data-type="recta">
+  <div class="h-48 bg-gray-200 relative overflow-hidden">
+    <img alt="SUPREME H6S-M-Q" class="w-full h-full object-cover" src="images/machines/supreme-h6s-m-q.jpg"/>
+    <div class="absolute top-3 left-3 bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold">SUPREME</div>
+    <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
+  </div>
+  <div class="p-5">
+    <h3 class="text-lg font-bold text-slate-900 mb-2">SUPREME H6S-M-Q</h3>
+    <p class="text-gray-600 text-sm mb-3">Recta industrial Supreme para producción diaria con rendimiento sólido y mantenimiento sencillo.</p>
+    <ul class="text-sm text-gray-600 mb-4 space-y-1">
+      <li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Puntada recta industrial</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Diseño para producción</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Excelente costo/beneficio</li>
+    </ul>
+    <a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
+      Solicitar cotización
+    </a>
+  </div>
+</div><div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="supreme" data-type="recta">
+  <div class="h-48 bg-gray-200 relative overflow-hidden">
+    <img alt="SUPREME H7S-M" class="w-full h-full object-cover" src="images/machines/supreme-h7s-m.jpg"/>
+    <div class="absolute top-3 left-3 bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold">SUPREME</div>
+    <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
+  </div>
+  <div class="p-5">
+    <h3 class="text-lg font-bold text-slate-900 mb-2">SUPREME H7S-M</h3>
+    <p class="text-gray-600 text-sm mb-3">Recta industrial Supreme para operación intensiva con resultados consistentes.</p>
+    <ul class="text-sm text-gray-600 mb-4 space-y-1">
+      <li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Puntada recta industrial</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Operación estable</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Volumen medio/alto</li>
+    </ul>
+    <a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
+      Solicitar cotización
+    </a>
+  </div>
 </div>
-<div>
-<h2 class="text-2xl font-bold text-slate-900">Máquinas Rectas</h2>
-<p class="text-gray-600">Costura recta industrial de alta velocidad</p>
+  </div>
+</div><div class="category-section mb-12 col-span-full" data-category="doble-aguja">
+  <div class="flex items-center gap-4 mb-6">
+    <div class="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center">
+      <i class="w-6 h-6 text-slate-600" data-lucide="columns-2"></i>
+    </div>
+    <div>
+      <h2 class="text-2xl font-bold text-slate-900">Doble Aguja</h2>
+      <p class="text-gray-600">Costuras paralelas y pespuntes</p>
+    </div>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="supreme" data-type="doble-aguja">
+  <div class="h-48 bg-gray-200 relative overflow-hidden">
+    <img alt="SUPREME SP-842D" class="w-full h-full object-cover" src="images/machines/supreme-sp-842d.jpg"/>
+    <div class="absolute top-3 left-3 bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold">SUPREME</div>
+    <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
+  </div>
+  <div class="p-5">
+    <h3 class="text-lg font-bold text-slate-900 mb-2">SUPREME SP-842D</h3>
+    <p class="text-gray-600 text-sm mb-3">Doble aguja industrial para costuras paralelas y aplicaciones en prendas de vestir.</p>
+    <ul class="text-sm text-gray-600 mb-4 space-y-1">
+      <li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Costuras paralelas</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Ideal para pespuntes</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Aplicaciones en denim/uniformes</li>
+    </ul>
+    <a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
+      Solicitar cotización
+    </a>
+  </div>
+</div><div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="supreme" data-type="doble-aguja">
+  <div class="h-48 bg-gray-200 relative overflow-hidden">
+    <img alt="SUPREME SP-872D" class="w-full h-full object-cover" src="images/machines/supreme-sp-872d.jpg"/>
+    <div class="absolute top-3 left-3 bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold">SUPREME</div>
+    <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
+  </div>
+  <div class="p-5">
+    <h3 class="text-lg font-bold text-slate-900 mb-2">SUPREME SP-872D</h3>
+    <p class="text-gray-600 text-sm mb-3">Doble aguja industrial enfocada en productividad para costuras dobles y acabados.</p>
+    <ul class="text-sm text-gray-600 mb-4 space-y-1">
+      <li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Costura doble estable</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Enfoque en producción</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Configuración según aplicación</li>
+    </ul>
+    <a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
+      Solicitar cotización
+    </a>
+  </div>
 </div>
+  </div>
+</div><div class="category-section mb-12 col-span-full" data-category="overlock">
+  <div class="flex items-center gap-4 mb-6">
+    <div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center">
+      <i class="w-6 h-6 text-purple-600" data-lucide="scissors"></i>
+    </div>
+    <div>
+      <h2 class="text-2xl font-bold text-slate-900">Overlock / Remalladoras</h2>
+      <p class="text-gray-600">Terminados de costura y corte</p>
+    </div>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="pegasus" data-type="overlock">
+  <div class="h-48 bg-gray-200 relative overflow-hidden">
+    <img alt="PEGASUS M900Neo" class="w-full h-full object-cover" src="images/machines/pegasus-m900neo.jpg"/>
+    <div class="absolute top-3 left-3 bg-indigo-600 text-white px-3 py-1 rounded-full text-xs font-bold">PEGASUS</div>
+    <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
+  </div>
+  <div class="p-5">
+    <h3 class="text-lg font-bold text-slate-900 mb-2">PEGASUS M900Neo</h3>
+    <p class="text-gray-600 text-sm mb-3">Overlock industrial para terminados limpios con alta consistencia en producción.</p>
+    <ul class="text-sm text-gray-600 mb-4 space-y-1">
+      <li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Terminados profesionales</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Producción continua</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Acabado uniforme</li>
+    </ul>
+    <a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
+      Solicitar cotización
+    </a>
+  </div>
+</div><div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="supreme" data-type="overlock">
+  <div class="h-48 bg-gray-200 relative overflow-hidden">
+    <img alt="SUPREME S5F-5" class="w-full h-full object-cover" src="images/machines/supreme-s5f-5.jpg"/>
+    <div class="absolute top-3 left-3 bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold">SUPREME</div>
+    <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
+  </div>
+  <div class="p-5">
+    <h3 class="text-lg font-bold text-slate-900 mb-2">SUPREME S5F-5</h3>
+    <p class="text-gray-600 text-sm mb-3">Overlock 5 hilos para seguridad y resistencia en costuras con remate y refuerzo.</p>
+    <ul class="text-sm text-gray-600 mb-4 space-y-1">
+      <li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> 5 hilos</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Costura + sobrehilado</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Prendas que requieren refuerzo</li>
+    </ul>
+    <a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
+      Solicitar cotización
+    </a>
+  </div>
+</div><div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="supreme" data-type="overlock">
+  <div class="h-48 bg-gray-200 relative overflow-hidden">
+    <img alt="SUPREME S5F-4" class="w-full h-full object-cover" src="images/machines/supreme-s5f-4.jpg"/>
+    <div class="absolute top-3 left-3 bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold">SUPREME</div>
+    <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
+  </div>
+  <div class="p-5">
+    <h3 class="text-lg font-bold text-slate-900 mb-2">SUPREME S5F-4</h3>
+    <p class="text-gray-600 text-sm mb-3">Overlock 4 hilos para producción general con acabado uniforme.</p>
+    <ul class="text-sm text-gray-600 mb-4 space-y-1">
+      <li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> 4 hilos</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Acabado uniforme</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Rendimiento industrial</li>
+    </ul>
+    <a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
+      Solicitar cotización
+    </a>
+  </div>
+</div><div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="yamato" data-type="overlock">
+  <div class="h-48 bg-gray-200 relative overflow-hidden">
+    <img alt="YAMATO CZ6020" class="w-full h-full object-cover" src="images/machines/yamato-cz6020.jpg"/>
+    <div class="absolute top-3 left-3 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold">YAMATO</div>
+    <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
+  </div>
+  <div class="p-5">
+    <h3 class="text-lg font-bold text-slate-900 mb-2">YAMATO CZ6020</h3>
+    <p class="text-gray-600 text-sm mb-3">Overlock Yamato para alta calidad de puntada y estabilidad en materiales elásticos.</p>
+    <ul class="text-sm text-gray-600 mb-4 space-y-1">
+      <li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Calidad de puntada</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Tejidos elásticos</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Consistencia</li>
+    </ul>
+    <a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
+      Solicitar cotización
+    </a>
+  </div>
 </div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<!-- Brother Recta -->
-<div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="brother" data-type="recta">
-<div class="h-48 bg-gray-200 relative overflow-hidden">
-<img alt="Brother Recta" class="w-full h-full object-cover" src="http://static.photos/industry/640x360/50"/>
-<div class="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">BROTHER</div>
-<div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded text-xs font-bold">Stock</div>
+  </div>
+</div><div class="category-section mb-12 col-span-full" data-category="coverstitch">
+  <div class="flex items-center gap-4 mb-6">
+    <div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
+      <i class="w-6 h-6 text-green-600" data-lucide="layers"></i>
+    </div>
+    <div>
+      <h2 class="text-2xl font-bold text-slate-900">Coverstitch / Cobertoras</h2>
+      <p class="text-gray-600">Terminados planos y recubrimientos</p>
+    </div>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="pegasus" data-type="coverstitch">
+  <div class="h-48 bg-gray-200 relative overflow-hidden">
+    <img alt="PEGASUS W600PC" class="w-full h-full object-cover" src="images/machines/pegasus-w600pc.jpg"/>
+    <div class="absolute top-3 left-3 bg-indigo-600 text-white px-3 py-1 rounded-full text-xs font-bold">PEGASUS</div>
+    <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
+  </div>
+  <div class="p-5">
+    <h3 class="text-lg font-bold text-slate-900 mb-2">PEGASUS W600PC</h3>
+    <p class="text-gray-600 text-sm mb-3">Coverstitch industrial para terminados planos en prendas deportivas y casuales.</p>
+    <ul class="text-sm text-gray-600 mb-4 space-y-1">
+      <li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Terminados planos</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Tejidos de punto</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Acabado profesional</li>
+    </ul>
+    <a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
+      Solicitar cotización
+    </a>
+  </div>
+</div><div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="yamato" data-type="coverstitch">
+  <div class="h-48 bg-gray-200 relative overflow-hidden">
+    <img alt="YAMATO VC1700" class="w-full h-full object-cover" src="images/machines/yamato-vc1700.jpg"/>
+    <div class="absolute top-3 left-3 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold">YAMATO</div>
+    <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
+  </div>
+  <div class="p-5">
+    <h3 class="text-lg font-bold text-slate-900 mb-2">YAMATO VC1700</h3>
+    <p class="text-gray-600 text-sm mb-3">Coverstitch Yamato para recubrimiento con estabilidad y calidad constante.</p>
+    <ul class="text-sm text-gray-600 mb-4 space-y-1">
+      <li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Cover industrial</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Consistencia</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Configuración por aplicación</li>
+    </ul>
+    <a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
+      Solicitar cotización
+    </a>
+  </div>
+</div><div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="supreme" data-type="coverstitch">
+  <div class="h-48 bg-gray-200 relative overflow-hidden">
+    <img alt="SUPREME SP-799" class="w-full h-full object-cover" src="images/machines/supreme-sp-799.jpg"/>
+    <div class="absolute top-3 left-3 bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold">SUPREME</div>
+    <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
+  </div>
+  <div class="p-5">
+    <h3 class="text-lg font-bold text-slate-900 mb-2">SUPREME SP-799</h3>
+    <p class="text-gray-600 text-sm mb-3">Coverstitch Supreme para producción diaria con acabado limpio.</p>
+    <ul class="text-sm text-gray-600 mb-4 space-y-1">
+      <li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Cover industrial</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Acabado uniforme</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Soporte técnico</li>
+    </ul>
+    <a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
+      Solicitar cotización
+    </a>
+  </div>
 </div>
-<div class="p-5">
-<h3 class="text-lg font-bold text-slate-900 mb-2">Brother S-7250A</h3>
-<p class="text-gray-600 text-sm mb-3">Recta direct drive con corte automático de hilo. Motor servo integrado.</p>
-<ul class="text-sm text-gray-600 mb-4 space-y-1">
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> 5,000 rpm</li>
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Corte de hilo automático</li>
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Panel digital</li>
-</ul>
-<a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
-                                    Solicitar cotización
-                                </a>
-</div>
-</div>
-<!-- Pegasus Recta -->
-<div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="pegasus" data-type="recta">
-<div class="h-48 bg-gray-200 relative overflow-hidden">
-<img alt="Pegasus Recta" class="w-full h-full object-cover" src="http://static.photos/industry/640x360/51"/>
-<div class="absolute top-3 left-3 bg-indigo-600 text-white px-3 py-1 rounded-full text-xs font-bold">PEGASUS</div>
-<div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded text-xs font-bold">Stock</div>
-</div>
-<div class="p-5">
-<h3 class="text-lg font-bold text-slate-900 mb-2">Pegasus W1 Series</h3>
-<p class="text-gray-600 text-sm mb-3">Recta industrial japonesa de alta resistencia para materiales pesados.</p>
-<ul class="text-sm text-gray-600 mb-4 space-y-1">
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> 4,500 rpm</li>
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Transmisión directa</li>
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Para denim pesado</li>
-</ul>
-<a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
-                                    Solicitar cotización
-                                </a>
-</div>
-</div>
-</div>
-</div>
-<!-- OVERLOCK CATEGORY -->
-<div class="category-section mb-12 col-span-full" data-category="overlock">
-<div class="flex items-center gap-4 mb-6">
-<div class="w-12 h-12 bg-purple-100 rounded-xl flex items-center justify-center">
-<i class="w-6 h-6 text-purple-600" data-lucide="scissors"></i>
-</div>
-<div>
-<h2 class="text-2xl font-bold text-slate-900">Overlock / Remalladoras</h2>
-<p class="text-gray-600">Terminados de costura y corte de tela</p>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<!-- Brother Overlock -->
-<div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="brother" data-type="overlock">
-<div class="h-48 bg-gray-200 relative overflow-hidden">
-<img alt="Brother Overlock" class="w-full h-full object-cover" src="http://static.photos/industry/640x360/52"/>
-<div class="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">BROTHER</div>
-<div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded text-xs font-bold">Stock</div>
-</div>
-<div class="p-5">
-<h3 class="text-lg font-bold text-slate-900 mb-2">Brother MA4-B661</h3>
-<p class="text-gray-600 text-sm mb-3">Overlock 4 hilos direct drive con sistema de ahorro energético.</p>
-<ul class="text-sm text-gray-600 mb-4 space-y-1">
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> 7,000 rpm</li>
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> 4 hilos</li>
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Corte diferencial</li>
-</ul>
-<a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
-                                    Solicitar cotización
-                                </a>
-</div>
-</div>
-<!-- Pegasus Overlock -->
-<div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="pegasus" data-type="overlock">
-<div class="h-48 bg-gray-200 relative overflow-hidden">
-<img alt="Pegasus Overlock" class="w-full h-full object-cover" src="http://static.photos/industry/640x360/53"/>
-<div class="absolute top-3 left-3 bg-indigo-600 text-white px-3 py-1 rounded-full text-xs font-bold">PEGASUS</div>
-<div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
-</div>
-<div class="p-5">
-<h3 class="text-lg font-bold text-slate-900 mb-2">Pegasus MX Series</h3>
-<p class="text-gray-600 text-sm mb-3">Overlock industrial de alta velocidad para producción masiva.</p>
-<ul class="text-sm text-gray-600 mb-4 space-y-1">
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> 8,000 rpm</li>
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Sistema dry-head</li>
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> 3-4-5 hilos</li>
-</ul>
-<a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
-                                    Solicitar cotización
-                                </a>
-</div>
-</div>
-<!-- Yamato Overlock -->
-<div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="yamato" data-type="overlock">
-<div class="h-48 bg-gray-200 relative overflow-hidden">
-<img alt="Yamato Overlock" class="w-full h-full object-cover" src="http://static.photos/industry/640x360/54"/>
-<div class="absolute top-3 left-3 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold">YAMATO</div>
-<div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded text-xs font-bold">Stock</div>
-</div>
-<div class="p-5">
-<h3 class="text-lg font-bold text-slate-900 mb-2">Yamato ZF Series</h3>
-<p class="text-gray-600 text-sm mb-3">Overlock de precisión japonesa para tejidos delicados y elásticos.</p>
-<ul class="text-sm text-gray-600 mb-4 space-y-1">
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> 6,500 rpm</li>
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Ajuste micro diferencial</li>
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Para lycra y jersey</li>
-</ul>
-<a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
-                                    Solicitar cotización
-                                </a>
-</div>
-</div>
-</div>
-</div>
-<!-- COVERSTITCH CATEGORY -->
-<div class="category-section mb-12 col-span-full" data-category="coverstitch">
-<div class="flex items-center gap-4 mb-6">
-<div class="w-12 h-12 bg-green-100 rounded-xl flex items-center justify-center">
-<i class="w-6 h-6 text-green-600" data-lucide="layers"></i>
-</div>
-<div>
-<h2 class="text-2xl font-bold text-slate-900">Coverstitch / Cobertoras</h2>
-<p class="text-gray-600">Terminados planos para ropa deportiva y casual</p>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<!-- Brother Coverstitch -->
-<div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="brother" data-type="coverstitch">
-<div class="h-48 bg-gray-200 relative overflow-hidden">
-<img alt="Brother Coverstitch" class="w-full h-full object-cover" src="http://static.photos/industry/640x360/55"/>
-<div class="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">BROTHER</div>
-<div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded text-xs font-bold">Stock</div>
-</div>
-<div class="p-5">
-<h3 class="text-lg font-bold text-slate-900 mb-2">Brother CV3550</h3>
-<p class="text-gray-600 text-sm mb-3">Coverstitch 3 agujas para terminados elásticos en camisetas.</p>
-<ul class="text-sm text-gray-600 mb-4 space-y-1">
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> 3 agujas / 5 hilos</li>
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Para tejidos de punto</li>
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> 2,500 rpm</li>
-</ul>
-<a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
-                                    Solicitar cotización
-                                </a>
-</div>
-</div>
-<!-- Yamato Coverstitch -->
-<div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="yamato" data-type="coverstitch">
-<div class="h-48 bg-gray-200 relative overflow-hidden">
-<img alt="Yamato Coverstitch" class="w-full h-full object-cover" src="http://static.photos/industry/640x360/56"/>
-<div class="absolute top-3 left-3 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold">YAMATO</div>
-<div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
-</div>
-<div class="p-5">
-<h3 class="text-lg font-bold text-slate-900 mb-2">Yamato VC Series</h3>
-<p class="text-gray-600 text-sm mb-3">Cobertora de alta velocidad con sistema de control de tensión automático.</p>
-<ul class="text-sm text-gray-600 mb-4 space-y-1">
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> 2-3 agujas</li>
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Control tensión digital</li>
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> 3,000 rpm</li>
-</ul>
-<a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
-                                    Solicitar cotización
-                                </a>
-</div>
-</div>
-</div>
-</div>
-<!-- AUTOMÁTICAS CATEGORY -->
-<div class="category-section mb-12 col-span-full" data-category="automaticas">
-<div class="flex items-center gap-4 mb-6">
-<div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center">
-<i class="w-6 h-6 text-orange-600" data-lucide="cpu"></i>
-</div>
-<div>
-<h2 class="text-2xl font-bold text-slate-900">Máquinas Automáticas Programables</h2>
-<p class="text-gray-600">Soluciones CNC y automatizadas para producción inteligente</p>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<!-- Brother Automática -->
-<div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="brother" data-type="automatica">
-<div class="h-48 bg-gray-200 relative overflow-hidden">
-<img alt="Brother Automática" class="w-full h-full object-cover" src="http://static.photos/technology/640x360/57"/>
-<div class="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">BROTHER</div>
-<div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded text-xs font-bold">Stock</div>
-</div>
-<div class="p-5">
-<h3 class="text-lg font-bold text-slate-900 mb-2">Brother BAS-326G</h3>
-<p class="text-gray-600 text-sm mb-3">Máquina de patrones programable con área 300x200mm.</p>
-<ul class="text-sm text-gray-600 mb-4 space-y-1">
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Área 300x200mm</li>
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> 500 patrones memoria</li>
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Pantalla táctil</li>
-</ul>
-<a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
-                                    Solicitar cotización
-                                </a>
-</div>
-</div>
-<!-- Supreme Automática -->
-<div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="supreme" data-type="automatica">
-<div class="h-48 bg-gray-200 relative overflow-hidden">
-<img alt="Supreme Automática" class="w-full h-full object-cover" src="http://static.photos/technology/640x360/58"/>
-<div class="absolute top-3 left-3 bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold">SUPREME</div>
-<div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
-</div>
-<div class="p-5">
-<h3 class="text-lg font-bold text-slate-900 mb-2">Supreme C-1207D</h3>
-<p class="text-gray-600 text-sm mb-3">Bartack automático electrónico para refuerzos de alta resistencia.</p>
-<ul class="text-sm text-gray-600 mb-4 space-y-1">
+  </div>
+</div><div class="category-section mb-12 col-span-full" data-category="bartack">
+  <div class="flex items-center gap-4 mb-6">
+    <div class="w-12 h-12 bg-amber-100 rounded-xl flex items-center justify-center">
+      <i class="w-6 h-6 text-amber-600" data-lucide="anchor"></i>
+    </div>
+    <div>
+      <h2 class="text-2xl font-bold text-slate-900">Bartack / Presilladoras</h2>
+      <p class="text-gray-600">Refuerzos de alta resistencia</p>
+    </div>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="supreme" data-type="bartack">
+  <div class="h-48 bg-gray-200 relative overflow-hidden">
+    <img alt="SUPREME SP-430" class="w-full h-full object-cover" src="images/machines/supreme-sp-430.jpg"/>
+    <div class="absolute top-3 left-3 bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold">SUPREME</div>
+    <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
+  </div>
+  <div class="p-5">
+    <h3 class="text-lg font-bold text-slate-900 mb-2">SUPREME SP-430</h3>
+    <p class="text-gray-600 text-sm mb-3">Presilladora para refuerzos repetitivos con precisión y repetibilidad.</p>
+    <ul class="text-sm text-gray-600 mb-4 space-y-1">
+      <li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Refuerzos repetitivos</li>
 <li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Patrones programables</li>
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> 2,500 puntadas/min</li>
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Sensor automático</li>
-</ul>
-<a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
-                                    Solicitar cotización
-                                </a>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Denim y uniformes</li>
+    </ul>
+    <a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
+      Solicitar cotización
+    </a>
+  </div>
+</div><div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="brother" data-type="bartack">
+  <div class="h-48 bg-gray-200 relative overflow-hidden">
+    <img alt="BROTHER KE-430" class="w-full h-full object-cover" src="images/machines/brother-ke-430.jpg"/>
+    <div class="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">BROTHER</div>
+    <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
+  </div>
+  <div class="p-5">
+    <h3 class="text-lg font-bold text-slate-900 mb-2">BROTHER KE-430</h3>
+    <p class="text-gray-600 text-sm mb-3">Bartack Brother para refuerzos consistentes y producción estable.</p>
+    <ul class="text-sm text-gray-600 mb-4 space-y-1">
+      <li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Refuerzo consistente</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Configuración por patrón</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Soporte y repuestos</li>
+    </ul>
+    <a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
+      Solicitar cotización
+    </a>
+  </div>
 </div>
+  </div>
+</div><div class="category-section mb-12 col-span-full" data-category="ojal">
+  <div class="flex items-center gap-4 mb-6">
+    <div class="w-12 h-12 bg-fuchsia-100 rounded-xl flex items-center justify-center">
+      <i class="w-6 h-6 text-fuchsia-600" data-lucide="circle"></i>
+    </div>
+    <div>
+      <h2 class="text-2xl font-bold text-slate-900">Ojaladoras</h2>
+      <p class="text-gray-600">Ojales electrónicos para producción</p>
+    </div>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="supreme" data-type="ojal">
+  <div class="h-48 bg-gray-200 relative overflow-hidden">
+    <img alt="SUPREME SP-1790DS" class="w-full h-full object-cover" src="images/machines/supreme-sp-1790ds.jpg"/>
+    <div class="absolute top-3 left-3 bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold">SUPREME</div>
+    <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
+  </div>
+  <div class="p-5">
+    <h3 class="text-lg font-bold text-slate-900 mb-2">SUPREME SP-1790DS</h3>
+    <p class="text-gray-600 text-sm mb-3">Ojaladora electrónica para ojales uniformes y repetibles.</p>
+    <ul class="text-sm text-gray-600 mb-4 space-y-1">
+      <li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Ojales uniformes</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Repetibilidad</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Enfoque en productividad</li>
+    </ul>
+    <a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
+      Solicitar cotización
+    </a>
+  </div>
+</div><div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="brother" data-type="ojal">
+  <div class="h-48 bg-gray-200 relative overflow-hidden">
+    <img alt="BROTHER HE-800C" class="w-full h-full object-cover" src="images/machines/brother-he-800c.jpg"/>
+    <div class="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">BROTHER</div>
+    <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
+  </div>
+  <div class="p-5">
+    <h3 class="text-lg font-bold text-slate-900 mb-2">BROTHER HE-800C</h3>
+    <p class="text-gray-600 text-sm mb-3">Ojaladora Brother para producción con enfoque en calidad y consistencia.</p>
+    <ul class="text-sm text-gray-600 mb-4 space-y-1">
+      <li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Ojales consistentes</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Ideal para línea</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Soporte y repuestos</li>
+    </ul>
+    <a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
+      Solicitar cotización
+    </a>
+  </div>
 </div>
-<!-- Brother Ojaladora -->
-<div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="brother" data-type="automatica">
-<div class="h-48 bg-gray-200 relative overflow-hidden">
-<img alt="Brother Ojaladora" class="w-full h-full object-cover" src="http://static.photos/technology/640x360/59"/>
-<div class="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">BROTHER</div>
-<div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded text-xs font-bold">Stock</div>
+  </div>
+</div><div class="category-section mb-12 col-span-full" data-category="automaticas">
+  <div class="flex items-center gap-4 mb-6">
+    <div class="w-12 h-12 bg-orange-100 rounded-xl flex items-center justify-center">
+      <i class="w-6 h-6 text-orange-600" data-lucide="cpu"></i>
+    </div>
+    <div>
+      <h2 class="text-2xl font-bold text-slate-900">Automáticas y CNC</h2>
+      <p class="text-gray-600">Automatización para procesos repetitivos</p>
+    </div>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="supreme" data-type="automatica">
+  <div class="h-48 bg-gray-200 relative overflow-hidden">
+    <img alt="SUPREME SP-3020TD-MSN" class="w-full h-full object-cover" src="images/machines/supreme-sp-3020td-msn.jpg"/>
+    <div class="absolute top-3 left-3 bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold">SUPREME</div>
+    <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
+  </div>
+  <div class="p-5">
+    <h3 class="text-lg font-bold text-slate-900 mb-2">SUPREME SP-3020TD-MSN</h3>
+    <p class="text-gray-600 text-sm mb-3">Pegadora de bolsa semi-automática (una aguja) para estandarizar tiempo y calidad del proceso.</p>
+    <ul class="text-sm text-gray-600 mb-4 space-y-1">
+      <li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Pocket setter semi-automático</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Consistencia</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Jeans y pantalón</li>
+    </ul>
+    <a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
+      Solicitar cotización
+    </a>
+  </div>
+</div><div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="supreme" data-type="automatica">
+  <div class="h-48 bg-gray-200 relative overflow-hidden">
+    <img alt="SUPREME SP-3020TD-MDN" class="w-full h-full object-cover" src="images/machines/supreme-sp-3020td-mdn.jpg"/>
+    <div class="absolute top-3 left-3 bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold">SUPREME</div>
+    <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
+  </div>
+  <div class="p-5">
+    <h3 class="text-lg font-bold text-slate-900 mb-2">SUPREME SP-3020TD-MDN</h3>
+    <p class="text-gray-600 text-sm mb-3">Pegadora de bolsa semi-automática (doble aguja) para procesos de bolsillo con costura paralela.</p>
+    <ul class="text-sm text-gray-600 mb-4 space-y-1">
+      <li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Pocket setter semi-automático</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Doble aguja</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Producción repetible</li>
+    </ul>
+    <a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
+      Solicitar cotización
+    </a>
+  </div>
+</div><div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="supreme" data-type="automatica">
+  <div class="h-48 bg-gray-200 relative overflow-hidden">
+    <img alt="SUPREME SP-1310" class="w-full h-full object-cover" src="images/machines/supreme-sp-1310.jpg"/>
+    <div class="absolute top-3 left-3 bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold">SUPREME</div>
+    <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
+  </div>
+  <div class="p-5">
+    <h3 class="text-lg font-bold text-slate-900 mb-2">SUPREME SP-1310</h3>
+    <p class="text-gray-600 text-sm mb-3">Máquina de patrón CNC para costuras programables y repetibles.</p>
+    <ul class="text-sm text-gray-600 mb-4 space-y-1">
+      <li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Patrones programables</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Repetibilidad</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Operaciones de precisión</li>
+    </ul>
+    <a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
+      Solicitar cotización
+    </a>
+  </div>
+</div><div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="supreme" data-type="automatica">
+  <div class="h-48 bg-gray-200 relative overflow-hidden">
+    <img alt="SUPREME SP-2210" class="w-full h-full object-cover" src="images/machines/supreme-sp-2210.jpg"/>
+    <div class="absolute top-3 left-3 bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold">SUPREME</div>
+    <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
+  </div>
+  <div class="p-5">
+    <h3 class="text-lg font-bold text-slate-900 mb-2">SUPREME SP-2210</h3>
+    <p class="text-gray-600 text-sm mb-3">Máquina de patrón CNC para aplicaciones industriales con control y consistencia.</p>
+    <ul class="text-sm text-gray-600 mb-4 space-y-1">
+      <li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Patrones CNC</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Productividad</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Aplicaciones industriales</li>
+    </ul>
+    <a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
+      Solicitar cotización
+    </a>
+  </div>
+</div><div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="supreme" data-type="automatica">
+  <div class="h-48 bg-gray-200 relative overflow-hidden">
+    <img alt="SUPREME SP-3020" class="w-full h-full object-cover" src="images/machines/supreme-sp-3020.jpg"/>
+    <div class="absolute top-3 left-3 bg-slate-700 text-white px-3 py-1 rounded-full text-xs font-bold">SUPREME</div>
+    <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
+  </div>
+  <div class="p-5">
+    <h3 class="text-lg font-bold text-slate-900 mb-2">SUPREME SP-3020</h3>
+    <p class="text-gray-600 text-sm mb-3">Máquina de patrón CNC para procesos automatizados en producción textil.</p>
+    <ul class="text-sm text-gray-600 mb-4 space-y-1">
+      <li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Automatización</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Consistencia</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Optimiza tiempos</li>
+    </ul>
+    <a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
+      Solicitar cotización
+    </a>
+  </div>
+</div><div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="brother" data-type="automatica">
+  <div class="h-48 bg-gray-200 relative overflow-hidden">
+    <img alt="BROTHER BAS-326" class="w-full h-full object-cover" src="images/machines/brother-bas-326.jpg"/>
+    <div class="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">BROTHER</div>
+    <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
+  </div>
+  <div class="p-5">
+    <h3 class="text-lg font-bold text-slate-900 mb-2">BROTHER BAS-326</h3>
+    <p class="text-gray-600 text-sm mb-3">Máquina de patrón Brother para automatización de costuras repetitivas.</p>
+    <ul class="text-sm text-gray-600 mb-4 space-y-1">
+      <li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Patrones CNC</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Precisión</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Soporte y repuestos</li>
+    </ul>
+    <a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
+      Solicitar cotización
+    </a>
+  </div>
+</div><div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="brother" data-type="automatica">
+  <div class="h-48 bg-gray-200 relative overflow-hidden">
+    <img alt="BROTHER BAS-342" class="w-full h-full object-cover" src="images/machines/brother-bas-342.jpg"/>
+    <div class="absolute top-3 left-3 bg-blue-600 text-white px-3 py-1 rounded-full text-xs font-bold">BROTHER</div>
+    <div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
+  </div>
+  <div class="p-5">
+    <h3 class="text-lg font-bold text-slate-900 mb-2">BROTHER BAS-342</h3>
+    <p class="text-gray-600 text-sm mb-3">Máquina de patrón Brother para operaciones complejas y repetibles en producción.</p>
+    <ul class="text-sm text-gray-600 mb-4 space-y-1">
+      <li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Patrones CNC</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Producción estable</li>
+<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Integración en línea</li>
+    </ul>
+    <a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
+      Solicitar cotización
+    </a>
+  </div>
 </div>
-<div class="p-5">
-<h3 class="text-lg font-bold text-slate-900 mb-2">Brother HE-800C</h3>
-<p class="text-gray-600 text-sm mb-3">Ojaladora automática programable para ojales rectos.</p>
-<ul class="text-sm text-gray-600 mb-4 space-y-1">
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Ojales 6-38mm</li>
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Programación digital</li>
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> 2,200 rpm</li>
-</ul>
-<a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
-                                    Solicitar cotización
-                                </a>
+  </div>
 </div>
-</div>
-</div>
-</div>
-<!-- ESPECIALES CATEGORY -->
-<div class="category-section mb-12 col-span-full" data-category="especiales">
-<div class="flex items-center gap-4 mb-6">
-<div class="w-12 h-12 bg-red-100 rounded-xl flex items-center justify-center">
-<i class="w-6 h-6 text-red-600" data-lucide="star"></i>
-</div>
-<div>
-<h2 class="text-2xl font-bold text-slate-900">Máquinas Especiales</h2>
-<p class="text-gray-600">Soluciones específicas para aplicaciones industriales</p>
-</div>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-<!-- Pegasus Feed Off Arm -->
-<div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="pegasus" data-type="especial">
-<div class="h-48 bg-gray-200 relative overflow-hidden">
-<img alt="Pegasus Feed Off" class="w-full h-full object-cover" src="http://static.photos/industry/640x360/60"/>
-<div class="absolute top-3 left-3 bg-indigo-600 text-white px-3 py-1 rounded-full text-xs font-bold">PEGASUS</div>
-<div class="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded text-xs font-bold">Stock</div>
-</div>
-<div class="p-5">
-<h3 class="text-lg font-bold text-slate-900 mb-2">Pegasus FS Series</h3>
-<p class="text-gray-600 text-sm mb-3">Feed-off-the-arm para costura de cierres y refuerzos en jeans.</p>
-<ul class="text-sm text-gray-600 mb-4 space-y-1">
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> 3 agujas</li>
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Para denim pesado</li>
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> 2,800 rpm</li>
-</ul>
-<a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
-                                    Solicitar cotización
-                                </a>
-</div>
-</div>
-<!-- Yamato Blind Stitch -->
-<div class="machine-card bg-white rounded-2xl overflow-hidden shadow-lg transition-all duration-300" data-brand="yamato" data-type="especial">
-<div class="h-48 bg-gray-200 relative overflow-hidden">
-<img alt="Yamato Blind Stitch" class="w-full h-full object-cover" src="http://static.photos/industry/640x360/61"/>
-<div class="absolute top-3 left-3 bg-red-600 text-white px-3 py-1 rounded-full text-xs font-bold">YAMATO</div>
-<div class="absolute top-3 right-3 bg-yellow-500 text-white px-2 py-1 rounded text-xs font-bold">Consultar</div>
-</div>
-<div class="p-5">
-<h3 class="text-lg font-bold text-slate-900 mb-2">Yamato CM Series</h3>
-<p class="text-gray-600 text-sm mb-3">Blind stitch para dobladillo invisible en prendas formales.</p>
-<ul class="text-sm text-gray-600 mb-4 space-y-1">
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Puntada invisible</li>
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> Para dobladillos</li>
-<li class="flex items-center gap-2"><i class="w-4 h-4 text-green-500" data-lucide="check"></i> 2,000 rpm</li>
-</ul>
-<a class="block w-full bg-blue-600 hover:bg-blue-700 text-white text-center py-2.5 rounded-lg font-semibold transition text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
-                                    Solicitar cotización
-                                </a>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="mt-12 bg-blue-900 rounded-2xl p-8 text-center text-white">
-<h3 class="text-2xl font-bold mb-4">¿Necesitas una máquina específica?</h3>
-<p class="text-blue-200 mb-6 max-w-2xl mx-auto">Contamos con catálogo extendido de todas las marcas. Si no encuentras lo que buscas, consúltanos.</p>
-<div class="flex flex-col sm:flex-row gap-4 justify-center">
-<a class="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full font-bold transition flex items-center justify-center gap-2" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
-<i class="w-5 h-5" data-lucide="message-circle"></i>
-                        Consultar catálogo completo
-                    </a>
-</div>
-</div>
-</div>
+    </div>
+
+    <div class="mt-12 bg-blue-900 rounded-2xl p-8 text-center text-white">
+      <h3 class="text-2xl font-bold mb-4">¿Necesitas una máquina específica?</h3>
+      <p class="text-blue-200 mb-6 max-w-2xl mx-auto">Contamos con catálogo extendido. Decinos tu aplicación y te recomendamos el modelo correcto.</p>
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        <a class="bg-green-500 hover:bg-green-600 text-white px-8 py-3 rounded-full font-bold transition flex items-center justify-center gap-2" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
+          <i class="w-5 h-5" data-lucide="message-circle"></i>
+          Consultar por WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
 </section>
+
 <!-- Footer -->
 <footer class="text-gray-400 py-16 brand-navy-bg">
 <div class="container mx-auto px-4 sm:px-6 lg:px-8">
@@ -542,7 +777,7 @@
 </div>
 </footer>
 <!-- Floating WhatsApp -->
-    &gt;
+    
     <a class="whatsapp-float fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl z-50 transition transform hover:scale-110" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
 <i class="w-8 h-8" data-lucide="message-circle"></i>
 </a>
