@@ -78,7 +78,7 @@
                     Transforma tu producción con maquinaria automatizada, sistemas de control numérico y soluciones integrales que incrementan la productividad hasta un 300% mientras reducen costos operativos.
                 </p>
 <div class="flex flex-col sm:flex-row gap-4">
-                    &gt;
+                    
                     <a class="bg-green-500 hover:bg-green-600 text-white px-8 py-4 rounded-full font-bold text-lg transition transform hover:scale-105 flex items-center justify-center gap-3 shadow-lg shadow-green-500/30" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
 <i class="w-6 h-6" data-lucide="message-circle"></i>
                         Solicitar Asesoría
@@ -328,7 +328,7 @@
 </div>
 </div>
 
-                    &gt;
+                    
                     <a class="mt-6 block w-full bg-green-500 hover:bg-green-600 text-white text-center py-3 rounded-lg font-bold transition" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
                         Recibir cotización detallada
                     </a>
@@ -348,28 +348,28 @@
 <i class="w-12 h-12 text-blue-600 mb-4" data-lucide="scissors"></i>
 <h4 class="text-xl font-bold text-slate-900 mb-2">Denim y Jeans</h4>
 <p class="text-gray-600 text-sm mb-4">Bartack automático, ojales reforzados y costuras de alta resistencia.</p>
-                    &gt;
+                    
                     <a class="text-blue-600 font-semibold hover:text-blue-800 text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">Cotizar solución →</a>
 </div>
 <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
 <i class="w-12 h-12 text-blue-600 mb-4" data-lucide="car"></i>
 <h4 class="text-xl font-bold text-slate-900 mb-2">Automotriz</h4>
 <p class="text-gray-600 text-sm mb-4">Airbags, tapicería y componentes con estándares de seguridad ISO.</p>
-                    &gt;
+                    
                     <a class="text-blue-600 font-semibold hover:text-blue-800 text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">Cotizar solución →</a>
 </div>
 <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
 <i class="w-12 h-12 text-blue-600 mb-4" data-lucide="shirt"></i>
 <h4 class="text-xl font-bold text-slate-900 mb-2">Camisetas/Activewear</h4>
 <p class="text-gray-600 text-sm mb-4">Coverstitch automatizado y manejo de tejidos técnicos elásticos.</p>
-                    &gt;
+                    
                     <a class="text-blue-600 font-semibold hover:text-blue-800 text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">Cotizar solución →</a>
 </div>
 <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-xl transition">
 <i class="w-12 h-12 text-blue-600 mb-4" data-lucide="briefcase"></i>
 <h4 class="text-xl font-bold text-slate-900 mb-2">Uniformes Industrial</h4>
 <p class="text-gray-600 text-sm mb-4">Alta resistencia y volumen para uniformes corporativos y militar.</p>
-                    &gt;
+                    
                     <a class="text-blue-600 font-semibold hover:text-blue-800 text-sm" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">Cotizar solución →</a>
 </div>
 </div>
@@ -381,7 +381,7 @@
 <h2 class="text-3xl md:text-4xl font-bold mb-4">¿Listo para automatizar tu fábrica?</h2>
 <p class="text-xl text-blue-200 mb-8 max-w-2xl mx-auto">Agenda una visita técnica sin compromiso. Evaluamos tu línea de producción y te presentamos un proyecto personalizado.</p>
 <div class="flex flex-col sm:flex-row gap-4 justify-center">
-                &gt;
+                
                 <a class="bg-green-500 hover:bg-green-600 text-white px-10 py-4 rounded-full font-bold text-lg transition transform hover:scale-105 flex items-center justify-center gap-3" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
 <i class="w-6 h-6" data-lucide="message-circle"></i>
                     Agendar visita técnica
@@ -470,43 +470,50 @@
 </div>
 </footer>
 <!-- Floating WhatsApp -->
-    &gt;
+    
     <a class="whatsapp-float fixed bottom-6 right-6 bg-green-500 hover:bg-green-600 text-white p-4 rounded-full shadow-2xl z-50 transition transform hover:scale-110 flex items-center gap-2 group" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
 <i class="w-8 h-8" data-lucide="message-circle"></i>
 <span class="max-w-0 overflow-hidden group-hover:max-w-xs transition-all duration-300 whitespace-nowrap font-semibold">Asesoría técnica</span>
 </a>
+
 <script>
-        lucide.createIcons();
+lucide.createIcons();
 
-        // Mobile menu
-        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
-        const mobileMenu = document.getElementById('mobile-menu');
-        mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+// Mobile menu
+const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+const mobileMenu = document.getElementById('mobile-menu');
+if (mobileMenuBtn && mobileMenu) {
+  mobileMenuBtn.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+}
 
-        // Sticky header
-        const navbar = document.getElementById('navbar');
-        window.addEventListener('scroll', () => {
-            if (window.scrollY > 50) navbar.classList.add('nav-scrolled');
-            else navbar.classList.remove('nav-scrolled');
-        });
+// Sticky header
+const navbar = document.getElementById('navbar');
+if (navbar) {
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) navbar.classList.add('nav-scrolled');
+    else navbar.classList.remove('nav-scrolled');
+  });
+}
 
-        // ROI Calculator
-        function calculateROI() {
-            const operators = parseInt(document.getElementById('operators').value) || 0;
-            const salary = parseInt(document.getElementById('salary').value) || 0;
-            
-            // Automated machine replaces 3-4 operators but costs ~$400/month (depreciation/maintenance)
-            const savedOperators = Math.max(0, operators - 1); // Keep 1 supervisor
-            const monthlySaving = savedOperators * salary - 400; // $400 USD estimated machine cost
-            
-            document.getElementById('monthlySaving').textContent = ' + Math.max(0, monthlySaving).toLocaleString() + ' USD';
-            
-            const productionIncrease = Math.round((savedOperators / Math.max(1, operators)) * 200) + 50;
-            document.getElementById('productionIncrease').textContent = '+' + productionIncrease + '%';
-        }
-        
-        // Initialize calculation
-        calculateROI();
-    </script>
+// ROI Calculator
+function calculateROI() {
+  const operators = parseInt(document.getElementById('operators')?.value, 10) || 0;
+  const salary = parseInt(document.getElementById('salary')?.value, 10) || 0;
+
+  const savedOperators = Math.max(0, operators - 1);
+  const monthlySaving = savedOperators * salary - 400;
+
+  const saveEl = document.getElementById('monthlySaving');
+  if (saveEl) saveEl.textContent = '$' + Math.max(0, monthlySaving).toLocaleString() + ' USD';
+
+  const prodEl = document.getElementById('productionIncrease');
+  if (prodEl) {
+    const productionIncrease = Math.round((savedOperators / Math.max(1, operators)) * 200) + 50;
+    prodEl.textContent = '+' + productionIncrease + '%';
+  }
+}
+calculateROI();
+</script>
+
 </body>
 </html>
