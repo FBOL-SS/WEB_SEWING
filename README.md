@@ -94,7 +94,7 @@ Zona Franca American Park
 Ciudad Arce, La Libertad, El Salvador  
 
 📞 +503 7604 8817  
-📧 info@sewingsolution.net
+📧 fbolanos@sewingsolution.net
 ```
 
 ---
