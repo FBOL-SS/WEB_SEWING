@@ -2,7 +2,7 @@
 
 **Industrial Sewing Machinery • Automation • Global Solutions**
 
----
+--
 
 ## 🌐 Project Overview
 
