@@ -46,51 +46,64 @@
 <body class="bg-gray-50 text-slate-800 overflow-x-hidden">
 <!-- Sticky Header -->
 <header class="fixed w-full top-0 z-50 transition-all duration-300 brand-navy-bg" id="navbar">
-<div class="container mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex justify-between items-center h-20">
-<a href="index.html" style="display:flex; align-items:center;">
-  <img src="images/logo.png" alt="Sewing Solution"
-       style="height:64px !important; width:auto !important; max-height:none !important;">
-</a>
-<nav class="hidden md:flex space-x-8">
-<a class="text-white hover:text-blue-400 font-medium transition" href="index.html">Inicio</a>
-<a class="text-gray-300 hover:text-blue-400 font-medium transition" href="maquinaria.html">Maquinaria</a>
-<a class="text-gray-300 hover:text-blue-400 font-medium transition" href="refacciones.html">Refacciones</a>
-<a class="text-gray-300 hover:text-blue-400 font-medium transition" href="automatizacion.html">Automatización</a>
-<a class="text-gray-300 hover:text-blue-400 font-medium transition" href="servicio-tecnico.html">Servicio Técnico</a>
-<a class="text-gray-300 hover:text-blue-400 font-medium transition" href="contacto.html">Contacto</a>
-</nav>
-<div class="hidden md:flex items-center space-x-4">
-<a class="bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-full font-semibold transition flex items-center gap-2" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
-<i class="w-5 h-5" data-lucide="message-circle"></i>
-                        WhatsApp
-                    </a>
-</div>
-<a class="hidden md:flex items-center gap-2 px-5 py-2.5 rounded-full bg-white/10 text-white hover:bg-white/15 border border-white/15 hover:border-white/25 transition whitespace-nowrap backdrop-blur"
-   href="https://fbol-ss-sewing-fe.odoo.com/odoo"
-   target="_blank" rel="noopener noreferrer">
-  <i data-lucide="user" class="w-5 h-5"></i>
-  Iniciar sesión
-</a>
-<button class="md:hidden text-white" id="mobile-menu-btn">
-<i class="w-8 h-8" data-lucide="menu"></i>
-</button>
-</div>
-</div>
-<!-- Mobile Menu -->
-<div class="hidden md:hidden bg-slate-900 border-t border-slate-800" id="mobile-menu">
-<div class="px-4 pt-2 pb-6 space-y-2">
-<a class="block text-white py-3 font-medium border-b border-slate-800" href="index.html">Inicio</a>
-<a class="block text-gray-300 py-3 font-medium border-b border-slate-800" href="maquinaria.html">Maquinaria</a>
-<a class="block text-gray-300 py-3 font-medium border-b border-slate-800" href="refacciones.html">Refacciones</a>
-<a class="block text-gray-300 py-3 font-medium border-b border-slate-800" href="automatizacion.html">Automatización</a>
-<a class="block text-gray-300 py-3 font-medium border-b border-slate-800" href="servicio-tecnico.html">Servicio Técnico</a>
-<a class="block text-gray-300 py-3 font-medium" href="contacto.html">Contacto</a>
-<a class="block bg-green-500 text-white text-center py-3 rounded-lg font-semibold mt-4" href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
-                    Contactar por WhatsApp
-                </a>
-</div>
-</div>
+  <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center h-20 gap-6">
+      <!-- Logo -->
+      <a href="index.html" class="flex items-center gap-3 flex-shrink-0">
+        <img src="images/logo.png" alt="Sewing Solution" class="h-12 md:h-14 w-auto" style="max-height:none !important;">
+      </a>
+
+      <!-- Desktop Nav -->
+      <nav class="hidden md:flex flex-1 items-center justify-center gap-8 lg:gap-10">
+        <a class="text-white hover:text-blue-400 font-medium transition" href="index.html">Inicio</a>
+        <a class="text-gray-300 hover:text-blue-400 font-medium transition" href="maquinaria.html">Maquinaria</a>
+        <a class="text-gray-300 hover:text-blue-400 font-medium transition" href="refacciones.html">Refacciones</a>
+        <a class="text-gray-300 hover:text-blue-400 font-medium transition" href="automatizacion.html">Automatización</a>
+        <a class="text-gray-300 hover:text-blue-400 font-medium transition" href="servicio-tecnico.html">Servicio Técnico</a>
+        <a class="text-gray-300 hover:text-blue-400 font-medium transition" href="contacto.html">Contacto</a>
+      </nav>
+
+      <!-- Desktop Actions -->
+      <div class="hidden md:flex items-center gap-3 flex-shrink-0">
+        <a class="h-11 bg-green-500 hover:bg-green-600 text-white px-6 rounded-full font-semibold transition flex items-center gap-2"
+           href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
+          <i class="w-5 h-5" data-lucide="message-circle"></i>
+          WhatsApp
+        </a>
+        <a class="h-11 bg-white/10 hover:bg-white/15 border border-white/15 text-white px-6 rounded-full font-semibold transition flex items-center gap-2"
+           href="https://fbol-ss-sewing-fe.odoo.com/odoo" rel="noopener noreferrer" target="_blank">
+          <i class="w-5 h-5" data-lucide="user"></i>
+          Iniciar sesión
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden text-white ml-auto" id="mobile-menu-btn" aria-label="Abrir menú">
+        <i class="w-8 h-8" data-lucide="menu"></i>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div class="hidden md:hidden bg-slate-900 border-t border-slate-800" id="mobile-menu">
+    <div class="px-4 pt-2 pb-6 space-y-2">
+      <a class="block text-white py-3 font-medium border-b border-slate-800" href="index.html">Inicio</a>
+      <a class="block text-gray-300 py-3 font-medium border-b border-slate-800" href="maquinaria.html">Maquinaria</a>
+      <a class="block text-gray-300 py-3 font-medium border-b border-slate-800" href="refacciones.html">Refacciones</a>
+      <a class="block text-gray-300 py-3 font-medium border-b border-slate-800" href="automatizacion.html">Automatización</a>
+      <a class="block text-gray-300 py-3 font-medium border-b border-slate-800" href="servicio-tecnico.html">Servicio Técnico</a>
+      <a class="block text-gray-300 py-3 font-medium" href="contacto.html">Contacto</a>
+
+      <a class="block bg-green-500 text-white text-center py-3 rounded-lg font-semibold mt-4"
+         href="https://wa.me/50376048817" rel="noopener noreferrer" target="_blank">
+        Contactar por WhatsApp
+      </a>
+      <a class="block bg-white/10 border border-white/15 text-white text-center py-3 rounded-lg font-semibold"
+         href="https://fbol-ss-sewing-fe.odoo.com/odoo" rel="noopener noreferrer" target="_blank">
+        Iniciar sesión
+      </a>
+    </div>
+  </div>
 </header>
 <!-- Hero Section -->
 <section class="hero-bg min-h-screen flex items-center pt-20 relative page-hero page-hero--home">
